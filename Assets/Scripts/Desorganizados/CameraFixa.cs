@@ -7,7 +7,7 @@ public class CameraFixa : MonoBehaviour
 	public bool olharParaJogador;
 	public GameObject trigger;
 
-	private Transform jogadorTransform;
+	private GameObject jogador;
 
 	private CameraFixaTrigger cameraTrigger;
 
@@ -16,8 +16,6 @@ public class CameraFixa : MonoBehaviour
 
 	void Start()
 	{
-		jogadorTransform = GameObject.Find("Jogador").transform;
-
 		if (trigger)
 		{
 			cameraTrigger = trigger.GetComponent<CameraFixaTrigger>();
@@ -30,7 +28,10 @@ public class CameraFixa : MonoBehaviour
 
 	void Update()
 	{
+		if (!jogador)
+			jogador = GameObject.Find("Jogador");
+
 		if (olharParaJogador)
-			transform.LookAt(jogadorTransform);
+			transform.LookAt(jogador.transform);
 	}
 }

@@ -16,6 +16,7 @@ public class JogadorMovimento : MonoBehaviour
 
 	private bool correndo;
 	private bool exibirArma;
+	private bool exibirLanterna;
 
 	internal bool mudancaLiberada = true;
 	internal GameObject atual;
@@ -32,6 +33,7 @@ public class JogadorMovimento : MonoBehaviour
 	private int limiteContadorModificadores = 5;
 
 	private bool falandoComNpc = false;
+	private bool movimentoBloqueado = false;
 
 	void Start()
 	{
@@ -74,8 +76,17 @@ public class JogadorMovimento : MonoBehaviour
 		if (Input.GetButton("Run"))
 			correndo = true;
 
-		if (Input.GetKey(KeyCode.LeftControl))
-			jogadorAnimation.exibirArma = true;
+		if (Input.GetButtonDown("B Button"))
+		{
+			jogadorAnimation.exibirArma = !jogadorAnimation.exibirArma;
+			jogadorAnimation.exibirLanterna = false;
+		}
+
+		if (Input.GetButtonDown("X Button"))
+		{
+			jogadorAnimation.exibirLanterna = !jogadorAnimation.exibirLanterna;
+			jogadorAnimation.exibirArma = false;
+		}
 
 		Animar(v, correndo);
 		Mover(h, v, correndo);
@@ -83,8 +94,11 @@ public class JogadorMovimento : MonoBehaviour
 
 	void Mover(float h, float v, bool correndo)
 	{
-		if (falandoComNpc)
-			return;
+		if (falandoComNpc || movimentoBloqueado)
+		{
+			h = 0;
+			v = 0;
+		}
 
 		float velocidade = (correndo ? velocidadeCorrendo : velocidadeAndando);
 		
@@ -105,7 +119,7 @@ public class JogadorMovimento : MonoBehaviour
 		Vector3 posicaoAtual = transform.position;
 
 		if (Vector3.Distance(posicaoAtual, posicaoAnterior) > 0f)
-			animacao = (correndo ? (exibirArma ? "RunGun" : "Run") : "Walk");
+			animacao = (correndo ? "Run" : "Walk");
 
 		jogadorAnimation.AtualizarAnimacao(animacao);
 
@@ -163,6 +177,11 @@ public class JogadorMovimento : MonoBehaviour
 	public void AlterarFalandoComNpc(bool estado)
 	{
 		falandoComNpc = estado;
+	}
+
+	public void AlterarMovimento(bool estado)
+	{
+		movimentoBloqueado = estado;
 	}
 
 	void OnGUI()

@@ -3,36 +3,23 @@ using System.Collections;
 
 public class TrocarCenario : MonoBehaviour
 {
-	public GameObject destino;
+	[Header("Destino")]
+	public int cenaDestinoId;
 
-	public Animator canvasAnimator;
+	private ControladorCena controladorCena;
 
-	void OnTriggerEnter(Collider collider)
+	void Start()
 	{
-		if (collider.CompareTag("Player"))
-		{
-			JogadorMovimento jogador = collider.GetComponent<JogadorMovimento>();
-			if (jogador.mudancaLiberada && jogador.atual != gameObject)
-			{
-				jogador.mudancaLiberada = false;
-				jogador.atual = destino;
-				collider.transform.position = destino.transform.position;
-				canvasAnimator.SetTrigger("fadeOut");
-				canvasAnimator.SetTrigger("fadeIn");
-			}
-		}
+		controladorCena = ControladorCena.Pegar();
 	}
 
-	void OnTriggerExit(Collider collider)
+	public void MudarCena()
 	{
-		if (collider.CompareTag("Player"))
-		{
-			JogadorMovimento jogador = collider.GetComponent<JogadorMovimento>();
-			if (!jogador.mudancaLiberada && jogador.atual == gameObject)
-			{
-				jogador.mudancaLiberada = true;
-				jogador.atual = null;
-			}
-		}
+		if (controladorCena.jogadorScript.mudandoCena)
+			return;
+
+		controladorCena.jogadorMovimentoScript.AlterarMovimento(true);
+		controladorCena.saida = gameObject.name;
+		controladorCena.CarregarCena(cenaDestinoId);
 	}
 }

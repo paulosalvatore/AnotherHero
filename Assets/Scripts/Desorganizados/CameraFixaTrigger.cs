@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFixaTrigger : MonoBehaviour
 {
-	internal Camera camera;
+	internal new Camera camera;
 
 	void OnTriggerEnter(Collider collider)
 	{

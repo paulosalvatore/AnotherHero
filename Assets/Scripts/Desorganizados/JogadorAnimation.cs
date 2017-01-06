@@ -35,10 +35,6 @@ public class JogadorAnimation : MonoBehaviour
 		{
 			animator.SetFloat("velocidade", 0f);
 		}
-		/*else if (nomeAnimacao == "RunGun")
-		{
-			animator.SetFloat("velocidade", 0.31f);
-		}*/
 
 		animator.SetBool("arma", exibirArma);
 		animator.SetBool("lanterna", exibirLanterna);

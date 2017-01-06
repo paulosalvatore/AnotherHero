@@ -28,7 +28,6 @@ public class ControladorCena : MonoBehaviour
 	[Header("Jogador")]
 	public GameObject jogadorPrefab;
 	private GameObject jogador;
-	internal JogadorMovimento jogadorMovimentoScript;
 	internal Jogador jogadorScript;
 	internal string saida;
 
@@ -42,7 +41,6 @@ public class ControladorCena : MonoBehaviour
 		{
 			jogador = Instantiate(jogadorPrefab) as GameObject;
 			jogador.name = jogador.name.Replace("(Clone)", "");
-			jogadorMovimentoScript = jogador.GetComponent<JogadorMovimento>();
 			jogadorScript = jogador.GetComponent<Jogador>();
 			jogador.GetComponent<Rigidbody>().isKinematic = true;
 		}
@@ -71,9 +69,7 @@ public class ControladorCena : MonoBehaviour
 	{
 		if (jogoPausado)
 			pausar.DespausarJogo();
-
-		jogadorScript.mudandoCena = true;
-		jogadorScript.LimparCameras();
+		
 		carregarCenaId = cenaId;
 		StartCoroutine(CarregarCenaAposDelay());
 	}
@@ -88,6 +84,17 @@ public class ControladorCena : MonoBehaviour
 		carregarCenaId = 0;
 
 		fadeAnimator.SetTrigger("fadeIn");
+	}
+
+	public void Fade(string fade = null)
+	{
+		if (fade != null)
+			fadeAnimator.SetTrigger(fade);
+		else
+		{
+			fadeAnimator.SetTrigger("fadeOut");
+			fadeAnimator.SetTrigger("fadeIn");
+		}
 	}
 
 	public void Sair()

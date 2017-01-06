@@ -6,34 +6,30 @@ public class JogadorMovimento : MonoBehaviour
 {
 	public float velocidadeAndando;
 	public float velocidadeCorrendo;
+	private bool correndo;
+	public bool movimentacaoBaseadaCamera;
 
 	private new Rigidbody rigidbody;
 	private JogadorAnimation jogadorAnimation;
 
-	private Vector3 posicaoAnterior;
-
-	public Quaternion novaRotacao;
-
-	private bool correndo;
 	private bool exibirArma;
 	private bool exibirLanterna;
 
 	internal bool mudancaLiberada = true;
 	internal GameObject atual;
 
-	internal Vector2 modificadores = new Vector2(1f, 1f);
-
 	private float h = 0f;
 	private float v = 0f;
-
 	private float hAnterior = 0f;
 	private float vAnterior = 0f;
+	private Vector3 posicaoAnterior;
 
+	internal Vector2 modificadores = new Vector2(1f, 1f);
 	private int contadorModificadores = 0;
 	private int limiteContadorModificadores = 5;
 
 	private bool falandoComNpc = false;
-	private bool movimentoBloqueado = false;
+	private bool movimentoLiberado = false;
 
 	void Start()
 	{
@@ -71,7 +67,7 @@ public class JogadorMovimento : MonoBehaviour
 		hAnterior = h;
 		vAnterior = v;
 
-		bool correndo = false;
+		correndo = false;
 		
 		if (Input.GetButton("Run"))
 			correndo = true;
@@ -88,13 +84,13 @@ public class JogadorMovimento : MonoBehaviour
 			jogadorAnimation.exibirArma = false;
 		}
 
-		Animar(v, correndo);
-		Mover(h, v, correndo);
+		Animar();
+		Mover();
 	}
 
-	void Mover(float h, float v, bool correndo)
+	void Mover()
 	{
-		if (falandoComNpc || movimentoBloqueado)
+		if (falandoComNpc || !movimentoLiberado)
 		{
 			h = 0;
 			v = 0;
@@ -105,14 +101,14 @@ public class JogadorMovimento : MonoBehaviour
 		if (h != 0 || v != 0)
 		{
 			rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-			Rotacionar(h, v);
+			Rotacionar();
 			transform.Translate(Vector3.forward * velocidade * Time.deltaTime);
 		}
 		else
 			rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 	}
 
-	void Animar(float v, bool correndo)
+	void Animar()
 	{
 		string animacao = "Idle";
 
@@ -126,9 +122,7 @@ public class JogadorMovimento : MonoBehaviour
 		posicaoAnterior = posicaoAtual;
 	}
 
-	public bool testarMovimentacaoDiferente;
-
-	void Rotacionar(float h, float v)
+	void Rotacionar()
 	{
 		if (!Camera.main)
 			return;
@@ -166,10 +160,10 @@ public class JogadorMovimento : MonoBehaviour
 				valorRotacaoY = 270;
 		}
 
-		if (testarMovimentacaoDiferente)
+		if (movimentacaoBaseadaCamera)
 			valorRotacaoY += (camera.eulerAngles.y < 180 ? camera.eulerAngles.y - 180 : camera.eulerAngles.y);
 
-		novaRotacao = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, valorRotacaoY, 0), 0.1f);
+		Quaternion novaRotacao = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, valorRotacaoY, 0), 0.1f);
 
 		transform.rotation = novaRotacao;
 	}
@@ -181,7 +175,7 @@ public class JogadorMovimento : MonoBehaviour
 
 	public void AlterarMovimento(bool estado)
 	{
-		movimentoBloqueado = estado;
+		movimentoLiberado = estado;
 	}
 
 	void OnGUI()

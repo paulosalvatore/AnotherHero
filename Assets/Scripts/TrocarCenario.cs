@@ -4,6 +4,7 @@ using System.Collections;
 public class TrocarCenario : MonoBehaviour
 {
 	[Header("Destino")]
+	public bool trocarCena;
 	public int cenaDestinoId;
 
 	private ControladorCena controladorCena;
@@ -13,13 +14,11 @@ public class TrocarCenario : MonoBehaviour
 		controladorCena = ControladorCena.Pegar();
 	}
 
-	public void MudarCena()
+	public void MudarCenario()
 	{
-		if (controladorCena.jogadorScript.mudandoCena)
-			return;
-
-		controladorCena.jogadorMovimentoScript.AlterarMovimento(true);
-		controladorCena.saida = gameObject.name;
-		controladorCena.CarregarCena(cenaDestinoId);
+		if (trocarCena)
+			controladorCena.jogadorScript.IniciarMudancaCena(gameObject.name, cenaDestinoId);
+		else
+			controladorCena.jogadorScript.IniciarMudancaCenario(gameObject);
 	}
 }

@@ -15,7 +15,7 @@ public class TrocarCenarioTrigger : MonoBehaviour
 	{
 		if (collider.CompareTag("Player"))
 		{
-			trocarCenarioScript.MudarCena();
+			trocarCenarioScript.MudarCenario();
 		}
 	}
 }

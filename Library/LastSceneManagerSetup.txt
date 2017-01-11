@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/Scenes/Cen\xE1rio 1.unity"
+- path: Assets/Scenes/Cenas - deprecated/SuperCena - backup.unity
   isLoaded: 1
   isActive: 1

@@ -11,7 +11,7 @@ public class Jogador : MonoBehaviour
 
 	// Cena/Cenário
 	private ControladorCena controladorCena;
-	private bool mudandoCena = false;
+	private bool mudandoCena = true;
 	private bool mudandoCenario = false;
 	private GameObject destino;
 
@@ -71,11 +71,16 @@ public class Jogador : MonoBehaviour
 
 	public void FinalizaMudancaCena()
 	{
+		if (!mudandoCena)
+			return;
+
 		movimentoScript.AlterarMovimento(true);
 
 		AtualizarCamerasCenario();
 
 		controladorCena.saida = null;
+
+		destino = null;
 
 		mudandoCena = false;
 	}
@@ -104,12 +109,14 @@ public class Jogador : MonoBehaviour
 
 	void FinalizarMudancaCenario()
 	{
-		if (mudandoCenario)
+		if (!mudandoCenario)
 			return;
 
-		mudandoCenario = false;
-
 		movimentoScript.AlterarMovimento(true);
+
+		destino = null;
+
+		mudandoCenario = false;
 	}
 
 	IEnumerator AlterarPosicaoJogadorAposDelay()

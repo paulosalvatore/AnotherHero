@@ -9,9 +9,10 @@ public class TrocarCenario : MonoBehaviour
 
 	private ControladorCena controladorCena;
 
-	void Start()
+	void Update()
 	{
-		controladorCena = ControladorCena.Pegar();
+		if (controladorCena == null)
+			controladorCena = ControladorCena.Pegar();
 	}
 
 	public void MudarCenario()

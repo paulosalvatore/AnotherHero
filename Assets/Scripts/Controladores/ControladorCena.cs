@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ControladorCena : MonoBehaviour
 {
@@ -20,6 +21,13 @@ public class ControladorCena : MonoBehaviour
 	[Header("Fade")]
 	public GameObject fade;
 	private Animator fadeAnimator;
+
+	// FalaNpc
+	[Header("FalaNpc")]
+	public int maximoCaracteres;
+	internal GameObject falaNpc;
+	internal Text textoNpc;
+	internal GameObject fundoNpc;
 
 	// Jogo
 	private bool jogoRodando = false;
@@ -47,6 +55,10 @@ public class ControladorCena : MonoBehaviour
 
 		if (SceneManager.GetActiveScene().buildIndex == 0)
 			CarregarCena(cenaInicialId);
+
+		falaNpc = GameObject.Find("FalaNpc");
+		textoNpc = falaNpc.transform.FindChild("Texto").GetComponent<Text>();
+		fundoNpc = falaNpc.transform.FindChild("Fundo").gameObject;
 	}
 
 	void Update()
@@ -95,6 +107,13 @@ public class ControladorCena : MonoBehaviour
 			fadeAnimator.SetTrigger("fadeOut");
 			fadeAnimator.SetTrigger("fadeIn");
 		}
+	}
+
+	public void AlteracaoExibicaoFalaNpc(bool exibicao)
+	{
+		textoNpc.gameObject.SetActive(exibicao);
+		fundoNpc.SetActive(exibicao);
+		textoNpc.text = "";
 	}
 
 	public void Sair()

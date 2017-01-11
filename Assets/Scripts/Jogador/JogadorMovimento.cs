@@ -96,6 +96,9 @@ public class JogadorMovimento : MonoBehaviour
 			v = 0;
 		}
 
+		h = Mathf.Abs(h) < 0.15f ? 0 : h;
+		v = Mathf.Abs(v) < 0.15f ? 0 : v;
+
 		float velocidade = (correndo ? velocidadeCorrendo : velocidadeAndando);
 		
 		if (h != 0 || v != 0)

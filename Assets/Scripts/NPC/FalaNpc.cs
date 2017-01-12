@@ -7,7 +7,6 @@ public class FalaNpc : MonoBehaviour
 	/*
 	 * TODO
 	 * Falta colocar um informativo para que o jogador saiba que ele deve pressionar o botão A
-	 * Falta mudar o tamanho da fonte baseado no tamanho da tela (baseado no arquivo 'Config Textos NPCs.txt')
 	*/
 
 	// Falas declaradas no Inspector
@@ -45,6 +44,7 @@ public class FalaNpc : MonoBehaviour
 		if (collider.CompareTag("Player"))
 			IniciarInteracaoNpc();
 	}
+
 
 	void ProcessarFalas()
 	{
@@ -125,7 +125,7 @@ public class FalaNpc : MonoBehaviour
 	{
 		while (true)
 		{
-			if (!completarFraseAtualDisponivel && proximaFraseDisponivel)
+			if (!completarFraseAtualDisponivel && proximaFraseDisponivel && controladorCena.textoNpc.text.Length > 0)
 			{
 				char ultimoCaractereTextoNpc = controladorCena.textoNpc.text[controladorCena.textoNpc.text.Length - 1];
 				
@@ -168,6 +168,9 @@ public class FalaNpc : MonoBehaviour
 	{
 		if (npcIniciado)
 			return;
+
+		indexFraseAtual = 0;
+		proximaFraseDisponivel = true;
 
 		npcIniciado = true;
 

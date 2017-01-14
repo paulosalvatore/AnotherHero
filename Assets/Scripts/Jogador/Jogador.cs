@@ -18,11 +18,13 @@ public class Jogador : MonoBehaviour
 	// Jogador
 	internal JogadorMovimento movimentoScript;
 	internal JogadorAnimation animationScript;
+	internal JogadorInventario inventarioScript;
 
 	void Awake()
 	{
 		movimentoScript = GetComponent<JogadorMovimento>();
 		animationScript = GetComponent<JogadorAnimation>();
+		inventarioScript = GetComponent<JogadorInventario>();
 		controladorCena = ControladorCena.Pegar();
 	}
 

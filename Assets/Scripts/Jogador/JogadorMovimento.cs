@@ -4,32 +4,25 @@ using UnityEngine.UI;
 
 public class JogadorMovimento : MonoBehaviour
 {
+	public bool movimentacaoBaseadaCamera;
 	public float velocidadeAndando;
 	public float velocidadeCorrendo;
 	private bool correndo;
-	public bool movimentacaoBaseadaCamera;
+	private bool movimentoLiberado = false;
+	private float h = 0f;
+	private float v = 0f;
+	private float hAnterior = 0f;
+	private float vAnterior = 0f;
+	private Vector3 posicaoAnterior;
+	internal Vector2 modificadores = new Vector2(1f, 1f);
+	private int contadorModificadores = 0;
+	private int limiteContadorModificadores = 5;
 
 	private new Rigidbody rigidbody;
 	private JogadorAnimation jogadorAnimation;
 
 	private bool exibirArma;
 	private bool exibirLanterna;
-
-	internal bool mudancaLiberada = true;
-	internal GameObject atual;
-
-	private float h = 0f;
-	private float v = 0f;
-	private float hAnterior = 0f;
-	private float vAnterior = 0f;
-	private Vector3 posicaoAnterior;
-
-	internal Vector2 modificadores = new Vector2(1f, 1f);
-	private int contadorModificadores = 0;
-	private int limiteContadorModificadores = 5;
-
-	private bool falandoComNpc = false;
-	private bool movimentoLiberado = false;
 
 	void Start()
 	{
@@ -72,6 +65,7 @@ public class JogadorMovimento : MonoBehaviour
 		if (Input.GetButton("Run"))
 			correndo = true;
 
+		/*
 		if (Input.GetButtonDown("B Button"))
 		{
 			jogadorAnimation.exibirArma = !jogadorAnimation.exibirArma;
@@ -83,6 +77,7 @@ public class JogadorMovimento : MonoBehaviour
 			jogadorAnimation.exibirLanterna = !jogadorAnimation.exibirLanterna;
 			jogadorAnimation.exibirArma = false;
 		}
+		*/
 
 		Animar();
 		Mover();
@@ -90,7 +85,7 @@ public class JogadorMovimento : MonoBehaviour
 
 	void Mover()
 	{
-		if (falandoComNpc || !movimentoLiberado)
+		if (!movimentoLiberado)
 		{
 			h = 0;
 			v = 0;
@@ -171,21 +166,8 @@ public class JogadorMovimento : MonoBehaviour
 		transform.rotation = novaRotacao;
 	}
 
-	public void AlterarFalandoComNpc(bool estado)
-	{
-		falandoComNpc = estado;
-	}
-
 	public void AlterarMovimento(bool estado)
 	{
 		movimentoLiberado = estado;
-	}
-
-	void OnGUI()
-	{
-		string texto = "";
-		texto += string.Format("h: {0}\n", h);
-		texto += string.Format("v: {0}\n", v);
-		GUI.Label(new Rect(10, 10, 100, 2000), texto);
 	}
 }

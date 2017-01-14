@@ -3,13 +3,13 @@ using System.Collections;
 
 public class JogadorAnimation : MonoBehaviour
 {
-	[Header("Arma")]
-	public GameObject arma;
-	internal bool exibirArma;
+	//[Header("Arma")]
+	//public GameObject arma;
+	//internal bool exibirArma;
 
-	[Header("Lanterna")]
-	public GameObject lanterna;
-	internal bool exibirLanterna;
+	//[Header("Lanterna")]
+	//public GameObject lanterna;
+	//internal bool exibirLanterna;
 
 	private Animator animator;
 
@@ -36,20 +36,20 @@ public class JogadorAnimation : MonoBehaviour
 			animator.SetFloat("velocidade", 0f);
 		}
 
-		animator.SetBool("arma", exibirArma);
-		animator.SetBool("lanterna", exibirLanterna);
+		//animator.SetBool("arma", exibirArma);
+		//animator.SetBool("lanterna", exibirLanterna);
 
-		AlterarEstadoArma(exibirArma);
-		AlterarEstadoLanterna(exibirLanterna);
+		//AlterarEstadoArma(exibirArma);
+		//AlterarEstadoLanterna(exibirLanterna);
 	}
 
 	void AlterarEstadoArma(bool novoEstado)
 	{
-		arma.SetActive(novoEstado);
+		//arma.SetActive(novoEstado);
 	}
 
 	void AlterarEstadoLanterna(bool novoEstado)
 	{
-		lanterna.SetActive(novoEstado);
+		//lanterna.SetActive(novoEstado);
 	}
 }

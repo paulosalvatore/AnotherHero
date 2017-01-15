@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 64457c96a953fce43ae0c5aedc0f074a
-timeCreated: 1484362476
+timeCreated: 1484519042
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - lanternaPrefab: {fileID: 1637919227945906, guid: af8161039f2a65047a87ae1fdd454f07,
+      type: 2}
+  - paPrefab: {fileID: 1920835153067830, guid: a4afaa31b4bd3ab49a4e039d842b6b6b, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

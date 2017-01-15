@@ -7,14 +7,26 @@ public class JogadorInventario : MonoBehaviour
 	private GameObject maoEsquerda;
 	private GameObject maoDireita;
 
+	private GameObject lanterna;
+	private GameObject pa;
+
+	public GameObject lanternaPrefab;
+	public GameObject paPrefab;
+
 	internal GameObject itemDisponivel;
 	internal GameObject interacaoDisponivel;
 	internal GameObject interacaoDestino;
 
 	void Start()
 	{
-		maoEsquerda = GameObject.Find("E_mao").gameObject;
-		maoDireita = GameObject.Find("D_mao").gameObject;
+		//maoEsquerda = GameObject.Find("E_mao");
+		//maoDireita = GameObject.Find("D_mao");
+
+		lanterna = GameObject.Find("lantern");
+		pa = GameObject.Find("shovel");
+
+		lanterna.SetActive(false);
+		pa.SetActive(false);
 	}
 	
 	void Update()
@@ -23,11 +35,11 @@ public class JogadorInventario : MonoBehaviour
 		{
 			if (Input.GetButtonDown("LB"))
 			{
-				ColetarItem("esquerda");
+				ColetarItem();
 			}
 			else if (Input.GetButtonDown("RB"))
 			{
-				ColetarItem("direita");
+				ColetarItem();
 			}
 		}
 		else if (interacaoDisponivel)
@@ -37,21 +49,24 @@ public class JogadorInventario : MonoBehaviour
 				IniciarInteracao();
 			}
 		}
-
-		if (Input.GetAxisRaw("LT") == 1 && maoEsquerda.transform.childCount > 0)
+		else if (lanterna.activeSelf || pa.activeSelf)
 		{
-			DroparItem(maoEsquerda.transform.GetChild(0));
-		}
-		else if (Input.GetAxisRaw("RT") == 1 && maoDireita.transform.childCount > 0)
-		{
-			DroparItem(maoDireita.transform.GetChild(0));
+			if (Input.GetAxisRaw("7th Axis") == -1)
+			{
+				if (lanterna.activeSelf && Input.GetButton("LB"))
+					DroparItem(lanterna);
+				else if (pa.activeSelf && Input.GetButton("RB"))
+					DroparItem(pa);
+			}
 		}
 	}
 
 	void IniciarInteracao()
 	{
-		if (maoEsquerda.transform.childCount == 0 && maoDireita.transform.childCount == 0)
+		if (!lanterna.activeSelf && !pa.activeSelf)
 		{
+			// Tocar Animação
+
 			interacaoDestino.transform.position = new Vector3(
 				interacaoDestino.transform.position.x,
 				12f,
@@ -68,23 +83,57 @@ public class JogadorInventario : MonoBehaviour
 			Debug.Log("Eu preciso das duas mãos para fazer isso.");
 	}
 
-	void DroparItem(Transform item)
+	void DroparItem(GameObject item)
 	{
 		Debug.Log("Dropar item " + item.name + ".");
 
-		item.parent = null;
-		item.position = transform.position;
+		item.SetActive(false);
+
+		GameObject prefab = null;
+		if (item.name == "lantern")
+			prefab = lanternaPrefab;
+		else if (item.name == "shovel")
+			prefab = lanternaPrefab;
+
+		GameObject instancia = Instantiate(prefab, transform.position, paPrefab.transform.rotation) as GameObject;
+
+		instancia.transform.position = new Vector3(
+			instancia.transform.position.x,
+			0.55f,
+			instancia.transform.position.z
+		);
+
+		instancia.name = instancia.name.Replace("(Clone)", "");
+
+		//if (item.name == "lanterna")
+
+		//item.GetComponent<ItensColetaveis>().itemColetado = true;
+		//item.parent = null;
+		//item.position = transform.position;
 	}
 
-	void ColetarItem(string mao)
+	void ColetarItem()
 	{
+		Debug.Log("Coletar item " + itemDisponivel.name + ".");
+
 		// Tocar Animação
 
-		if (maoEsquerda.transform.childCount > 0)
-			DroparItem(maoEsquerda.transform.GetChild(0));
+		if (lanterna.activeSelf)
+			DroparItem(lanterna);
+		else if (pa.activeSelf)
+			DroparItem(pa);
 
-		Debug.Log("Coleta item " + itemDisponivel.name);
+		itemDisponivel.SetActive(false);
 
+		if (itemDisponivel.name == "LanternaPrefab")
+			lanterna.SetActive(true);
+		else if (itemDisponivel.name == "PáPrefab")
+			pa.SetActive(true);
+		
+		itemDisponivel.GetComponent<ItensColetaveis>().itemColetado = true;
+		itemDisponivel = null;
+
+		/*
 		itemDisponivel.transform.parent = maoEsquerda.transform;
 
 		if (mao == "esquerda")
@@ -103,7 +152,6 @@ public class JogadorInventario : MonoBehaviour
 				0
 			);
 		}
-
-		itemDisponivel = null;
+		*/
 	}
 }

@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class FalaNpc : MonoBehaviour
 {
-	/*
-	 * TODO
-	 * Falta colocar um informativo para que o jogador saiba que ele deve pressionar o botão A
-	*/
-
 	// Falas declaradas no Inspector
 	public List<string> falas;
 
@@ -36,13 +31,37 @@ public class FalaNpc : MonoBehaviour
 		}
 		
 		if (Input.GetButtonDown("A Button"))
-			ProsseguirExibicaoFraseAtual();
-	}
+		{
+			if (!npcIniciado && gameObject == controladorCena.jogadorScript.falaNpcDisponivel)
+			{
+				if (gameObject.GetComponent<ItensColetaveis>() && gameObject.GetComponent<ItensColetaveis>().itemColetado)
+					return;
 
+				IniciarInteracaoNpc();
+			}
+			else if (npcIniciado)
+				ProsseguirExibicaoFraseAtual();
+		}
+	}
+	
 	void OnTriggerEnter(Collider collider)
 	{
+		if (controladorCena == null)
+			return;
+
 		if (collider.CompareTag("Player"))
-			IniciarInteracaoNpc();
+		{
+			controladorCena.jogadorScript.falaNpcDisponivel = gameObject;
+		}
+	}
+
+	void OnTriggerExit(Collider collider)
+	{
+		if (collider.CompareTag("Player"))
+		{
+			if (controladorCena.jogadorScript.falaNpcDisponivel == gameObject)
+				controladorCena.jogadorScript.falaNpcDisponivel = gameObject;
+		}
 	}
 
 
@@ -73,7 +92,7 @@ public class FalaNpc : MonoBehaviour
 
 	void ArmazenarFalaDisponivel()
 	{
-		frases.Add(fraseEmFormacao.Substring(0, fraseEmFormacao.Length - 1));
+		frases.Add(fraseEmFormacao[fraseEmFormacao.Length - 1] == ' ' ? fraseEmFormacao.Substring(0, fraseEmFormacao.Length - 1) : fraseEmFormacao);
 		fraseEmFormacao = "";
 		proximaFraseDisponivel = true;
 	}

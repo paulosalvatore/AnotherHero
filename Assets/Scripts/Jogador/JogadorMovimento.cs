@@ -21,8 +21,8 @@ public class JogadorMovimento : MonoBehaviour
 	private new Rigidbody rigidbody;
 	private JogadorAnimation jogadorAnimation;
 
-	private bool exibirArma;
-	private bool exibirLanterna;
+	//private bool exibirArma;
+	//private bool exibirLanterna;
 
 	void Start()
 	{
@@ -62,7 +62,7 @@ public class JogadorMovimento : MonoBehaviour
 
 		correndo = false;
 		
-		if (Input.GetButton("Run"))
+		if (Input.GetButton("B Button"))
 			correndo = true;
 
 		/*

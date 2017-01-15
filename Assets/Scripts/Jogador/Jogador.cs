@@ -20,6 +20,9 @@ public class Jogador : MonoBehaviour
 	internal JogadorAnimation animationScript;
 	internal JogadorInventario inventarioScript;
 
+	// FalaNpc
+	internal GameObject falaNpcDisponivel;
+
 	void Awake()
 	{
 		movimentoScript = GetComponent<JogadorMovimento>();

@@ -25,9 +25,14 @@ public class ControladorCena : MonoBehaviour
 	// FalaNpc
 	[Header("FalaNpc")]
 	public int maximoCaracteres;
-	internal GameObject falaNpc;
+	private GameObject falaNpc;
 	internal Text textoNpc;
-	internal GameObject fundoNpc;
+	private GameObject fundoNpc;
+
+	// Auxílio Interação
+	private GameObject auxilioInteracao;
+	private Text textoAuxilioInteracao;
+	private GameObject fundoAuxilioInteracao;
 
 	// Jogo
 	private bool jogoRodando = false;
@@ -35,7 +40,7 @@ public class ControladorCena : MonoBehaviour
 	// Jogador
 	[Header("Jogador")]
 	public GameObject jogadorPrefab;
-	private GameObject jogador;
+	internal GameObject jogador;
 	internal Jogador jogadorScript;
 	internal string saida;
 
@@ -59,6 +64,10 @@ public class ControladorCena : MonoBehaviour
 		falaNpc = GameObject.Find("FalaNpc");
 		textoNpc = falaNpc.transform.FindChild("Texto").GetComponent<Text>();
 		fundoNpc = falaNpc.transform.FindChild("Fundo").gameObject;
+
+		auxilioInteracao = GameObject.Find("AuxílioInteração");
+		textoAuxilioInteracao = auxilioInteracao.transform.FindChild("Texto").GetComponent<Text>();
+		fundoAuxilioInteracao = auxilioInteracao.transform.FindChild("Fundo").gameObject;
 	}
 
 	void Update()
@@ -111,9 +120,18 @@ public class ControladorCena : MonoBehaviour
 
 	public void AlteracaoExibicaoFalaNpc(bool exibicao)
 	{
-		textoNpc.gameObject.SetActive(exibicao);
 		fundoNpc.SetActive(exibicao);
+
+		textoNpc.gameObject.SetActive(exibicao);
 		textoNpc.text = "";
+	}
+
+	public void AlteracaoExibicaoAuxilioInteracao(bool exibicao, string texto = "")
+	{
+		fundoAuxilioInteracao.SetActive(exibicao);
+
+		textoAuxilioInteracao.gameObject.SetActive(exibicao);
+		textoAuxilioInteracao.text = texto;
 	}
 
 	public void Sair()

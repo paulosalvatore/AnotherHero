@@ -4,19 +4,46 @@ using UnityEngine;
 
 public class ItensColetaveis : MonoBehaviour
 {
+	public GameObject botaoAuxilio;
+	public Vector3 posicaoBotaoAuxilio;
+
+	internal bool itemColetado = false;
+
 	private ControladorCena controladorCena;
+
+	void Start()
+	{
+		controladorCena = ControladorCena.Pegar();
+
+		if (botaoAuxilio)
+		{
+			botaoAuxilio = Instantiate(botaoAuxilio) as GameObject;
+			botaoAuxilio.transform.parent = transform;
+			botaoAuxilio.transform.localPosition = posicaoBotaoAuxilio;
+			botaoAuxilio.SetActive(false);
+		}
+	}
 
 	void Update()
 	{
 		if (controladorCena == null)
 			controladorCena = ControladorCena.Pegar();
+
+		if (itemColetado)
+			botaoAuxilio.SetActive(false);
 	}
 
 	void OnTriggerEnter(Collider collider)
 	{
+		if (itemColetado || controladorCena == null)
+			return;
+
 		if (collider.CompareTag("Player"))
 		{
-			Debug.Log("LB or RB = pick");
+			controladorCena.AlteracaoExibicaoAuxilioInteracao(true, "RB or LB = pick");
+
+			botaoAuxilio.SetActive(true);
+			
 			controladorCena.jogadorScript.inventarioScript.itemDisponivel = gameObject;
 		}
 	}
@@ -25,6 +52,10 @@ public class ItensColetaveis : MonoBehaviour
 	{
 		if (collider.CompareTag("Player"))
 		{
+			controladorCena.AlteracaoExibicaoAuxilioInteracao(false);
+
+			botaoAuxilio.SetActive(false);
+
 			if (controladorCena.jogadorScript.inventarioScript.itemDisponivel == gameObject)
 				controladorCena.jogadorScript.inventarioScript.itemDisponivel = null;
 		}

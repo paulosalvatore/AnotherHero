@@ -17,6 +17,8 @@ public class JogadorInventario : MonoBehaviour
 	internal GameObject interacaoDisponivel;
 	internal GameObject interacaoDestino;
 
+	private JogadorAnimation animationScript;
+
 	void Start()
 	{
 		//maoEsquerda = GameObject.Find("E_mao");
@@ -27,6 +29,8 @@ public class JogadorInventario : MonoBehaviour
 
 		lanterna.SetActive(false);
 		pa.SetActive(false);
+
+		animationScript = GetComponent<JogadorAnimation>();
 	}
 	
 	void Update()
@@ -65,7 +69,7 @@ public class JogadorInventario : MonoBehaviour
 	{
 		if (!lanterna.activeSelf && !pa.activeSelf)
 		{
-			// Tocar Animação
+			animationScript.alavanca = true;
 
 			interacaoDestino.transform.position = new Vector3(
 				interacaoDestino.transform.position.x,
@@ -73,7 +77,16 @@ public class JogadorInventario : MonoBehaviour
 				interacaoDestino.transform.position.z
 			);
 
-			interacaoDisponivel.GetComponent<Alavanca>().interacaoDisponivel = false;
+			Alavanca alavanca = interacaoDisponivel.GetComponent<Alavanca>();
+			alavanca.interacaoDisponivel = false;
+
+			transform.position = alavanca.posicaoJogador;
+			transform.rotation = new Quaternion(
+				alavanca.rotacaoJogador.x,
+				alavanca.rotacaoJogador.y,
+				alavanca.rotacaoJogador.z,
+				alavanca.rotacaoJogador	.w
+			);
 
 			interacaoDisponivel = null;
 

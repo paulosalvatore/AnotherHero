@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Alavanca : MonoBehaviour
 {
+	public Vector3 posicaoJogador;
+	public Vector4 rotacaoJogador;
 	public GameObject portao;
 	internal bool interacaoDisponivel = true;
 
@@ -22,7 +24,6 @@ public class Alavanca : MonoBehaviour
 
 		if (collider.CompareTag("Player"))
 		{
-			Debug.Log("LB + RB = interact");
 			controladorCena.jogadorScript.inventarioScript.interacaoDisponivel = gameObject;
 			controladorCena.jogadorScript.inventarioScript.interacaoDestino = portao;
 		}

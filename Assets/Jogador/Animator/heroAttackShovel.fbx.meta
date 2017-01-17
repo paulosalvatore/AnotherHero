@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 5dfd35d0eb00ca6498b21d9014ea5eb0
+timeCreated: 1484618361
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bacia
+    100002: cabelo1
+    100004: cebeca
+    100006: centro
+    100008: "D_bra\xE7o01"
+    100010: "D_bra\xE7o02"
+    100012: D_cotovelo
+    100014: D_coxa
+    100016: D_joelho
+    100018: D_mao
+    100020: D_ombro
+    100022: D_pe
+    100024: D_perna01
+    100026: D_perna02
+    100028: D_pulso
+    100030: "E_bra\xE7o01"
+    100032: "E_bra\xE7o02"
+    100034: E_cotovelo
+    100036: E_coxa
+    100038: E_joelho
+    100040: E_mao
+    100042: E_ombro
+    100044: E_pe
+    100046: E_perna01
+    100048: E_perna02
+    100050: E_pulso
+    100052: //RootNode
+    100054: joint4
+    100056: joint4 1
+    100058: pelvis
+    100060: pescoco
+    100062: shovel
+    100064: torso
+    100066: torso1
+    400000: bacia
+    400002: cabelo1
+    400004: cebeca
+    400006: centro
+    400008: "D_bra\xE7o01"
+    400010: "D_bra\xE7o02"
+    400012: D_cotovelo
+    400014: D_coxa
+    400016: D_joelho
+    400018: D_mao
+    400020: D_ombro
+    400022: D_pe
+    400024: D_perna01
+    400026: D_perna02
+    400028: D_pulso
+    400030: "E_bra\xE7o01"
+    400032: "E_bra\xE7o02"
+    400034: E_cotovelo
+    400036: E_coxa
+    400038: E_joelho
+    400040: E_mao
+    400042: E_ombro
+    400044: E_pe
+    400046: E_perna01
+    400048: E_perna02
+    400050: E_pulso
+    400052: //RootNode
+    400054: joint4
+    400056: joint4 1
+    400058: pelvis
+    400060: pescoco
+    400062: shovel
+    400064: torso
+    400066: torso1
+    2300000: cabelo1
+    2300002: cebeca
+    2300004: "D_bra\xE7o01"
+    2300006: "D_bra\xE7o02"
+    2300008: D_mao
+    2300010: D_pe
+    2300012: D_perna01
+    2300014: D_perna02
+    2300016: "E_bra\xE7o01"
+    2300018: "E_bra\xE7o02"
+    2300020: E_mao
+    2300022: E_pe
+    2300024: E_perna01
+    2300026: E_perna02
+    2300028: pelvis
+    2300030: shovel
+    2300032: torso
+    3300000: cabelo1
+    3300002: cebeca
+    3300004: "D_bra\xE7o01"
+    3300006: "D_bra\xE7o02"
+    3300008: D_mao
+    3300010: D_pe
+    3300012: D_perna01
+    3300014: D_perna02
+    3300016: "E_bra\xE7o01"
+    3300018: "E_bra\xE7o02"
+    3300020: E_mao
+    3300022: E_pe
+    3300024: E_perna01
+    3300026: E_perna02
+    3300028: pelvis
+    3300030: shovel
+    3300032: torso
+    4300000: E_pe
+    4300002: E_perna02
+    4300004: E_perna01
+    4300006: D_pe
+    4300008: D_perna02
+    4300010: D_perna01
+    4300012: torso
+    4300014: D_mao
+    4300016: shovel
+    4300018: "D_bra\xE7o02"
+    4300020: "D_bra\xE7o01"
+    4300022: E_mao
+    4300024: "E_bra\xE7o02"
+    4300026: "E_bra\xE7o01"
+    4300028: cebeca
+    4300030: cabelo1
+    4300032: pelvis
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,7 +11,9 @@ public class JogadorAnimation : MonoBehaviour
 	//public GameObject lanterna;
 	internal bool exibirLanterna;
 
-	private Animator animator;
+	internal bool alavanca;
+
+	internal Animator animator;
 
 	void Start ()
 	{
@@ -38,6 +40,12 @@ public class JogadorAnimation : MonoBehaviour
 
 		//animator.SetBool("arma", exibirArma);
 		animator.SetBool("lanterna", exibirLanterna);
+
+		if (alavanca)
+		{
+			animator.SetTrigger("alavanca");
+			alavanca = false;
+		}
 
 		//AlterarEstadoArma(exibirArma);
 		//AlterarEstadoLanterna(exibirLanterna);

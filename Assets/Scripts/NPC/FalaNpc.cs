@@ -32,15 +32,18 @@ public class FalaNpc : MonoBehaviour
 		
 		if (Input.GetButtonDown("A Button"))
 		{
-			if (!npcIniciado && gameObject == controladorCena.jogadorScript.falaNpcDisponivel)
+			if (controladorCena.jogadorScript.inventarioScript.itemDisponivel)
 			{
-				if (gameObject.GetComponent<ItensColetaveis>() && gameObject.GetComponent<ItensColetaveis>().itemColetado)
-					return;
+				if (!npcIniciado && gameObject == controladorCena.jogadorScript.falaNpcDisponivel)
+				{
+					if (gameObject.GetComponent<ItensColetaveis>() && gameObject.GetComponent<ItensColetaveis>().itemColetado)
+						return;
 
-				IniciarInteracaoNpc();
+					IniciarInteracaoNpc();
+				}
+				else if (npcIniciado)
+					ProsseguirExibicaoFraseAtual();
 			}
-			else if (npcIniciado)
-				ProsseguirExibicaoFraseAtual();
 		}
 	}
 	

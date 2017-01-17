@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8ac7729f977762446b04952fb12f4d1c
-timeCreated: 1482027602
+guid: 0bf084e4ff879914ca60c7a96ea75064
+timeCreated: 1484613803
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -31,14 +31,13 @@ ModelImporter:
     100046: E_perna01
     100048: E_perna02
     100050: E_pulso
-    100052: gun
-    100054: //RootNode
-    100056: joint4
-    100058: joint4 1
-    100060: pelvis
-    100062: pescoco
-    100064: torso
-    100066: torso1
+    100052: //RootNode
+    100054: joint4
+    100056: joint4 1
+    100058: pelvis
+    100060: pescoco
+    100062: torso
+    100064: torso1
     400000: bacia
     400002: cabelo1
     400004: cebeca
@@ -65,14 +64,13 @@ ModelImporter:
     400046: E_perna01
     400048: E_perna02
     400050: E_pulso
-    400052: gun
-    400054: //RootNode
-    400056: joint4
-    400058: joint4 1
-    400060: pelvis
-    400062: pescoco
-    400064: torso
-    400066: torso1
+    400052: //RootNode
+    400054: joint4
+    400056: joint4 1
+    400058: pelvis
+    400060: pescoco
+    400062: torso
+    400064: torso1
     2300000: cabelo1
     2300002: cebeca
     2300004: "D_bra\xE7o01"
@@ -87,9 +85,8 @@ ModelImporter:
     2300022: E_pe
     2300024: E_perna01
     2300026: E_perna02
-    2300028: gun
-    2300030: pelvis
-    2300032: torso
+    2300028: pelvis
+    2300030: torso
     3300000: cabelo1
     3300002: cebeca
     3300004: "D_bra\xE7o01"
@@ -104,9 +101,8 @@ ModelImporter:
     3300022: E_pe
     3300024: E_perna01
     3300026: E_perna02
-    3300028: gun
-    3300030: pelvis
-    3300032: torso
+    3300028: pelvis
+    3300030: torso
     4300000: E_pe
     4300002: E_perna02
     4300004: E_perna01
@@ -115,18 +111,16 @@ ModelImporter:
     4300010: D_perna01
     4300012: torso
     4300014: D_mao
-    4300016: gun
-    4300018: "D_bra\xE7o02"
-    4300020: "D_bra\xE7o01"
-    4300022: E_mao
-    4300024: "E_bra\xE7o02"
-    4300026: "E_bra\xE7o01"
-    4300028: cebeca
-    4300030: cabelo1
-    4300032: pelvis
-    7400000: RunGun
+    4300016: "D_bra\xE7o02"
+    4300018: "D_bra\xE7o01"
+    4300020: E_mao
+    4300022: "E_bra\xE7o02"
+    4300024: "E_bra\xE7o01"
+    4300026: cebeca
+    4300028: cabelo1
+    4300030: pelvis
+    7400000: WalkLamp
     9500000: //RootNode
-    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -149,11 +143,11 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: RunGun
+      name: WalkLamp
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 12
-      wrapMode: 2
+      lastFrame: 48
+      wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -194,8 +188,6 @@ ModelImporter:
       - path: centro/bacia/torso1/D_ombro/D_cotovelo/D_pulso
         weight: 1
       - path: centro/bacia/torso1/D_ombro/D_cotovelo/D_pulso/D_mao
-        weight: 1
-      - path: centro/bacia/torso1/D_ombro/D_cotovelo/D_pulso/gun
         weight: 1
       - path: centro/bacia/torso1/E_ombro
         weight: 1
@@ -241,9 +233,9 @@ ModelImporter:
         weight: 1
       - path: centro/pelvis
         weight: 1
-      maskType: 0
+      maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0.96
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -269,6 +261,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human:
     - boneName: centro
       humanName: Hips
@@ -375,176 +368,171 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: HeroRunGun(Clone)
+    - name: heroWalkLamp(Clone)
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: centro
-      position: {x: -0.00003405707, y: 0.2656333, z: 0}
-      rotation: {x: -0.12527302, y: -0.06630384, z: 0.0127719045, w: 0.9898219}
+      parentName: heroWalkLamp(Clone)
+      position: {x: 0.000000005122274, y: 0.27053457, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: bacia
+      parentName: centro
       position: {x: 0.0000656476, y: 0.023673756, z: 0}
-      rotation: {x: 0.02275539, y: 0.20368344, z: -0.68953407, w: 0.6946496}
+      rotation: {x: 0.05249093, y: -0.05198864, z: -0.7017761, w: 0.7085564}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: torso
+      parentName: bacia
       position: {x: 0.050382584, y: 0.002232856, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: torso1
+      parentName: bacia
       position: {x: -0.10019878, y: 0.002377929, z: 0}
-      rotation: {x: 0.99994135, y: -0.010831137, z: -6.6321584e-19, w: 6.122875e-17}
+      rotation: {x: 0.99994135, y: -0.010831137, z: -6.632159e-19, w: 6.122875e-17}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_ombro
+      parentName: torso1
       position: {x: -0.0035466286, y: -0.05795244, z: -7.097128e-18}
-      rotation: {x: -0.23966464, y: 0.3264124, z: -0.62378913, w: 0.66850793}
+      rotation: {x: -0.09358079, y: 0.044088688, z: -0.701545, w: 0.705077}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: "D_bra\xE7o01"
+      parentName: D_ombro
       position: {x: 0.14142261, y: 0.082171254, z: 0.0000000012244471}
       rotation: {x: 0.76536745, y: -0.64359355, z: -0.0000000047951456, w: -0.0000000057024323}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_cotovelo
+      parentName: D_ombro
       position: {x: 0.0851848, y: -0.000000039849617, z: -5.9213966e-16}
-      rotation: {x: 0.23727587, y: 0.5128146, z: 0.13644475, w: 0.8136979}
+      rotation: {x: -0.016283529, y: 0.2035062, z: 0.07808017, w: 0.9758194}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: "D_bra\xE7o02"
+      parentName: D_cotovelo
       position: {x: 0.0685885, y: 0.07218332, z: -9.130975e-10}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_pulso
+      parentName: D_cotovelo
       position: {x: 0.074026994, y: -0.00000005744757, z: 1.75405e-10}
       rotation: {x: 0.005676749, y: 0.9999839, z: -7.2051145e-12, w: 0.0000000012692228}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_mao
+      parentName: D_pulso
       position: {x: 0.00625766, y: 0.072116986, z: 0.0000000010726174}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: gun
-      position: {x: -0.086965114, y: 0.008718872, z: 0.0127899945}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_ombro
+      parentName: torso1
       position: {x: -0.0021382915, y: 0.05896395, z: 7.221001e-18}
-      rotation: {x: -0.6918222, y: 0.671306, z: 0.227225, w: -0.13820003}
+      rotation: {x: 0.51561016, y: -0.55681616, z: -0.43850723, w: 0.48146996}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: "E_bra\xE7o01"
+      parentName: E_ombro
       position: {x: -0.14081408, y: -0.08566717, z: 1.9721522e-33}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_cotovelo
+      parentName: E_ombro
       position: {x: -0.08518509, y: 4.7225508e-17, z: -1.6659502e-18}
-      rotation: {x: 0.2582936, y: 0.18612821, z: 0.17937276, w: 0.9308416}
+      rotation: {x: 0.54169464, y: 0.36321244, z: 0.031188374, w: 0.7574107}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: "E_bra\xE7o02"
+      parentName: E_cotovelo
       position: {x: -0.06854331, y: -0.07573152, z: 1.6659502e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_pulso
+      parentName: E_cotovelo
       position: {x: -0.074026994, y: -3.837544e-17, z: -6.6752644e-18}
-      rotation: {x: 0.25833803, y: 0.8427362, z: -0.46682027, w: 0.071666025}
+      rotation: {x: -0.0059274845, y: 0.9996304, z: 0.014499136, w: -0.022220993}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_mao
+      parentName: E_pulso
       position: {x: -0.006343143, y: -0.075664386, z: -9.118026e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: pescoco
+      parentName: torso1
       position: {x: -0.023591518, y: 0.00028423517, z: 3.4808768e-20}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: cebeca
+      parentName: pescoco
       position: {x: 0.17414069, y: -0.0034009395, z: -4.1649495e-19}
       rotation: {x: 1.2325952e-32, y: -3.85186e-34, z: 1.7347235e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: cabelo1
+      parentName: cebeca
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_coxa
+      parentName: centro
       position: {x: 0.024890926, y: -0.003928029, z: 0}
-      rotation: {x: 0.7044232, y: -0.68974245, z: -0.1194352, w: -0.11738269}
+      rotation: {x: 0.71142024, y: -0.6966483, z: -0.065899186, w: -0.06495968}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_joelho
+      parentName: D_coxa
       position: {x: 0.100256346, y: -0.00000003458056, z: 4.2348972e-24}
-      rotation: {x: 0.0010161249, y: -0.19344041, z: 0.009478448, w: 0.9810657}
+      rotation: {x: 0.00042255726, y: -0.070728146, z: 0.005959318, w: 0.99747777}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_perna02
+      parentName: D_joelho
       position: {x: -0.07751159, y: 0.023325993, z: -2.7429876e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: joint4
+      parentName: D_joelho
       position: {x: 0.14172095, y: 0.000000059601923, z: -2.0738054e-19}
-      rotation: {x: 0.012601834, y: -0.07554798, z: -0.688491, w: 0.72118926}
+      rotation: {x: -0.06827055, y: -0.012067689, z: -0.6932764, w: 0.71732944}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_pe
+      parentName: joint4
       position: {x: -0.0235183, y: -0.219212, z: -2.5356068e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: D_perna01
+      parentName: D_coxa
       position: {x: 0.022471575, y: 0.022398157, z: -2.7429832e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_coxa
+      parentName: centro
       position: {x: -0.024890937, y: -0.0039280513, z: 0}
-      rotation: {x: 0.0006819069, y: -0.0125457775, z: 0.68273836, w: 0.73055494}
+      rotation: {x: -0.083775654, y: 0.08272968, z: 0.69709927, w: 0.7072412}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_joelho
+      parentName: E_coxa
       position: {x: -0.10025629, y: -5.8286707e-18, z: 0}
-      rotation: {x: -0.0012082849, y: -0.18445063, z: 0.009314201, w: 0.98279697}
+      rotation: {x: -0.0035264257, y: -0.12909697, z: 0.012395086, w: 0.99154824}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_perna02
+      parentName: E_joelho
       position: {x: 0.07751645, y: -0.028891617, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: joint4 1
+      parentName: E_joelho
       position: {x: -0.14172138, y: 1.9947535e-16, z: 0}
-      rotation: {x: -0.74514204, y: -0.57655317, z: -0.3291854, w: -0.06314181}
+      rotation: {x: -0.53328675, y: -0.48719653, z: -0.4845285, w: 0.4934338}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_pe
+      parentName: joint4 1
       position: {x: 0.029083988, y: 0.2192124, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: E_perna01
+      parentName: E_coxa
       position: {x: -0.022400169, y: -0.027963363, z: 0}
       rotation: {x: 0, y: 0, z: -0.70255756, w: 0.71162695}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: pelvis
+      parentName: centro
       position: {x: 0.0027828258, y: -0.026685027, z: 0}
       rotation: {x: 0, y: 0, z: 0.28581592, w: 0.95828456}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -553,7 +541,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
   humanoidOversampling: 1

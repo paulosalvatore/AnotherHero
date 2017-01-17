@@ -34,6 +34,11 @@ public class Jogador : MonoBehaviour
 	void Update()
 	{
 		AtivarCameraDisponivel();
+
+		if (inventarioScript.lanterna)
+		{
+			animationScript.exibirLanterna = (inventarioScript.lanterna.activeSelf ? true : false);
+		}
 	}
 
 	void AtivarCameraDisponivel()

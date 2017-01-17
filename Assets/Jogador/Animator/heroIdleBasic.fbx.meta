@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d9f3a5eccb0f1ab40a1a67f9cad45a68
-timeCreated: 1483578485
+guid: ea9fe42f5fe56fb43821d2e664ba6d53
+timeCreated: 1484613804
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -119,7 +119,7 @@ ModelImporter:
     4300026: cebeca
     4300028: cabelo1
     4300030: pelvis
-    7400000: IdleLanterna
+    7400000: Idle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -143,7 +143,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: IdleLanterna
+      name: Idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 96
@@ -152,7 +152,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      hasAdditiveReferencePose: 1
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -367,6 +367,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: E_pulso
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: D_pulso
       humanName: RightHand
       limit:
@@ -376,13 +384,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: heroIdleLanterna(Clone)
+    - name: heroIdleBasic(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: centro
-      parentName: heroIdleLanterna(Clone)
+      parentName: heroIdleBasic(Clone)
       position: {x: 0.000000005122274, y: 0.2773532, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -414,7 +422,7 @@ ModelImporter:
     - name: D_cotovelo
       parentName: D_ombro
       position: {x: 0.0851848, y: -0.000000039849617, z: -5.9213966e-16}
-      rotation: {x: -0.017031033, y: 0.030124538, z: 0.004976839, w: 0.9993887}
+      rotation: {x: 0.000000014863825, y: 0.0000000011120551, z: 0.030525416, w: 0.999534}
       scale: {x: 1, y: 1, z: 1}
     - name: "D_bra\xE7o02"
       parentName: D_cotovelo
@@ -424,7 +432,7 @@ ModelImporter:
     - name: D_pulso
       parentName: D_cotovelo
       position: {x: 0.074026994, y: -0.00000005744757, z: 1.75405e-10}
-      rotation: {x: 0.7046934, y: 0.70909727, z: -0.00013766994, w: -0.024254765}
+      rotation: {x: 0.7050963, y: 0.7091116, z: 8.84845e-10, w: 0.000000021797979}
       scale: {x: 1, y: 1, z: 1}
     - name: D_mao
       parentName: D_pulso
@@ -434,7 +442,7 @@ ModelImporter:
     - name: E_ombro
       parentName: torso1
       position: {x: -0.0021382915, y: 0.05896395, z: 7.221001e-18}
-      rotation: {x: 0.6779095, y: -0.68796146, z: 0.18858923, w: -0.17771287}
+      rotation: {x: -0.69663775, y: 0.7174231, z: 3.768125e-17, w: 3.5094064e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: "E_bra\xE7o01"
       parentName: E_ombro
@@ -444,7 +452,7 @@ ModelImporter:
     - name: E_cotovelo
       parentName: E_ombro
       position: {x: -0.08518509, y: 4.7225508e-17, z: -1.6659502e-18}
-      rotation: {x: 0, y: -0, z: -0.6543352, w: 0.75620466}
+      rotation: {x: 2.8852142e-18, y: 1.967255e-17, z: 0.030524999, w: 0.9995341}
       scale: {x: 1, y: 1, z: 1}
     - name: "E_bra\xE7o02"
       parentName: E_cotovelo
@@ -454,7 +462,7 @@ ModelImporter:
     - name: E_pulso
       parentName: E_cotovelo
       position: {x: -0.074026994, y: -3.837544e-17, z: -6.6752644e-18}
-      rotation: {x: -0.36323902, y: 0.92162424, z: -0.13544542, w: -0.01790934}
+      rotation: {x: 0.7040093, y: 0.7101908, z: 1.4974321e-16, w: 4.740532e-18}
       scale: {x: 1, y: 1, z: 1}
     - name: E_mao
       parentName: E_pulso

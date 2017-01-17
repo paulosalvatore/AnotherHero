@@ -20,17 +20,27 @@ public class ItensColetaveis : MonoBehaviour
 			botaoAuxilio = Instantiate(botaoAuxilio) as GameObject;
 			botaoAuxilio.transform.parent = transform;
 			botaoAuxilio.transform.localPosition = posicaoBotaoAuxilio;
-			botaoAuxilio.SetActive(false);
 		}
 	}
 
 	void Update()
 	{
 		if (controladorCena == null)
+		{
 			controladorCena = ControladorCena.Pegar();
 
-		if (itemColetado)
+			controladorCena.AlteracaoExibicaoAuxilioInteracao(false);
+
 			botaoAuxilio.SetActive(false);
+		}
+		else if (itemColetado)
+		{
+			gameObject.SetActive(false);
+
+			controladorCena.AlteracaoExibicaoAuxilioInteracao(false);
+
+			botaoAuxilio.SetActive(false);
+		}
 	}
 
 	void OnTriggerEnter(Collider collider)

@@ -9,7 +9,7 @@ public class JogadorAnimation : MonoBehaviour
 
 	//[Header("Lanterna")]
 	//public GameObject lanterna;
-	//internal bool exibirLanterna;
+	internal bool exibirLanterna;
 
 	private Animator animator;
 
@@ -37,7 +37,7 @@ public class JogadorAnimation : MonoBehaviour
 		}
 
 		//animator.SetBool("arma", exibirArma);
-		//animator.SetBool("lanterna", exibirLanterna);
+		animator.SetBool("lanterna", exibirLanterna);
 
 		//AlterarEstadoArma(exibirArma);
 		//AlterarEstadoLanterna(exibirLanterna);

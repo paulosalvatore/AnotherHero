@@ -7,8 +7,8 @@ public class JogadorInventario : MonoBehaviour
 	private GameObject maoEsquerda;
 	private GameObject maoDireita;
 
-	private GameObject lanterna;
-	private GameObject pa;
+	internal GameObject lanterna;
+	internal GameObject pa;
 
 	public GameObject lanternaPrefab;
 	public GameObject paPrefab;
@@ -122,8 +122,6 @@ public class JogadorInventario : MonoBehaviour
 			DroparItem(lanterna);
 		else if (pa.activeSelf)
 			DroparItem(pa);
-
-		itemDisponivel.SetActive(false);
 
 		if (itemDisponivel.name == "LanternaPrefab")
 			lanterna.SetActive(true);

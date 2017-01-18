@@ -38,6 +38,14 @@ ModelImporter:
     100060: pescoco
     100062: torso
     100064: torso1
+    100066: chama
+    100068: halo
+    100070: lanterna
+    100072: lanterna1
+    100074: lanternaGRP
+    100076: pega
+    100078: transform1
+    100080: vela
     400000: bacia
     400002: cabelo1
     400004: cebeca
@@ -71,6 +79,14 @@ ModelImporter:
     400060: pescoco
     400062: torso
     400064: torso1
+    400066: chama
+    400068: halo
+    400070: lanterna
+    400072: lanterna1
+    400074: lanternaGRP
+    400076: pega
+    400078: transform1
+    400080: vela
     2300000: cabelo1
     2300002: cebeca
     2300004: "D_bra\xE7o01"
@@ -87,6 +103,11 @@ ModelImporter:
     2300026: E_perna02
     2300028: pelvis
     2300030: torso
+    2300032: chama
+    2300034: halo
+    2300036: lanterna1
+    2300038: pega
+    2300040: vela
     3300000: cabelo1
     3300002: cebeca
     3300004: "D_bra\xE7o01"
@@ -103,6 +124,11 @@ ModelImporter:
     3300026: E_perna02
     3300028: pelvis
     3300030: torso
+    3300032: chama
+    3300034: halo
+    3300036: lanterna1
+    3300038: pega
+    3300040: vela
     4300000: E_pe
     4300002: E_perna02
     4300004: E_perna01
@@ -119,6 +145,11 @@ ModelImporter:
     4300026: cebeca
     4300028: cabelo1
     4300030: pelvis
+    4300032: vela
+    4300034: chama
+    4300036: halo
+    4300038: lanterna1
+    4300040: pega
     7400000: IdleLamp
     9500000: //RootNode
   materials:

@@ -57,8 +57,9 @@ public class JogadorInventario : MonoBehaviour
 		{
 			if (Input.GetAxisRaw("7th Axis") == -1)
 			{
-				if (lanterna.activeSelf && Input.GetButton("LB"))
-					DroparItem(lanterna);
+                if (lanterna.activeSelf)
+                    //if (lanterna.activeSelf && Input.GetButton("LB"))
+                    DroparItem(lanterna);
 				else if (pa.activeSelf && Input.GetButton("RB"))
 					DroparItem(pa);
 			}

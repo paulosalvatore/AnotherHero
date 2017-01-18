@@ -50,7 +50,7 @@ public class ItensColetaveis : MonoBehaviour
 
 		if (collider.CompareTag("Player"))
 		{
-			controladorCena.AlteracaoExibicaoAuxilioInteracao(true, "RB or LB = pick");
+			//controladorCena.AlteracaoExibicaoAuxilioInteracao(true, "RB or LB = pick");
 
 			botaoAuxilio.SetActive(true);
 			

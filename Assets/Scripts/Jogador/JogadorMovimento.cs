@@ -35,7 +35,7 @@ public class JogadorMovimento : MonoBehaviour
 		h = Input.GetAxis("Horizontal");
 		v = Input.GetAxis("Vertical");
 		
-		if (Camera.main)
+		if (Camera.main && Camera.main.GetComponent<CameraFixa>())
 		{
 			modificadores.x = Camera.main.GetComponent<CameraFixa>().modificadorHorizontal;
 

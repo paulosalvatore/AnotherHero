@@ -10,19 +10,20 @@ public class JogadorInventario : MonoBehaviour
 	internal GameObject lanterna;
 	internal GameObject pa;
 
-	public GameObject lanternaPrefab;
-	public GameObject paPrefab;
+	private GameObject lanternaPrefab;
+	private GameObject paPrefab;
 
 	internal GameObject itemDisponivel;
 	internal GameObject interacaoDisponivel;
 	internal GameObject interacaoDestino;
 
+	private Jogador jogadorScript;
 	private JogadorAnimation animationScript;
 
 	void Start()
 	{
-		//maoEsquerda = GameObject.Find("E_mao");
-		//maoDireita = GameObject.Find("D_mao");
+		lanternaPrefab = GameObject.Find("LanternaPrefab");
+		paPrefab = GameObject.Find("PáPrefab");
 
 		lanterna = GameObject.Find("lantern");
 		pa = GameObject.Find("shovel");
@@ -30,21 +31,22 @@ public class JogadorInventario : MonoBehaviour
 		lanterna.SetActive(false);
 		pa.SetActive(false);
 
-		animationScript = GetComponent<JogadorAnimation>();
+		jogadorScript = GetComponent<Jogador>();
+		animationScript = jogadorScript.animationScript;
 	}
 	
 	void Update()
 	{
 		if (!interacaoDisponivel && itemDisponivel)
 		{
-			if (Input.GetButtonDown("LB"))
+			/*if (Input.GetButtonDown("LB"))
 			{
 				ColetarItem();
 			}
 			else if (Input.GetButtonDown("RB"))
 			{
 				ColetarItem();
-			}
+			}*/
 		}
 		else if (interacaoDisponivel)
 		{
@@ -86,7 +88,7 @@ public class JogadorInventario : MonoBehaviour
 				alavanca.rotacaoJogador.x,
 				alavanca.rotacaoJogador.y,
 				alavanca.rotacaoJogador.z,
-				alavanca.rotacaoJogador	.w
+				alavanca.rotacaoJogador.w
 			);
 
 			interacaoDisponivel = null;
@@ -107,17 +109,17 @@ public class JogadorInventario : MonoBehaviour
 		if (item.name == "lantern")
 			prefab = lanternaPrefab;
 		else if (item.name == "shovel")
-			prefab = lanternaPrefab;
+			prefab = paPrefab;
 
-		GameObject instancia = Instantiate(prefab, transform.position, paPrefab.transform.rotation) as GameObject;
+		prefab.GetComponent<ItensColetaveis>().itemColetado = false;
 
-		instancia.transform.position = new Vector3(
-			instancia.transform.position.x,
-			0.55f,
-			instancia.transform.position.z
+		prefab.SetActive(true);
+
+		prefab.transform.position = new Vector3(
+			transform.position.x,
+			1f,
+			transform.position.z
 		);
-
-		instancia.name = instancia.name.Replace("(Clone)", "");
 
 		//if (item.name == "lanterna")
 
@@ -126,7 +128,7 @@ public class JogadorInventario : MonoBehaviour
 		//item.position = transform.position;
 	}
 
-	void ColetarItem()
+	public void ColetarItem()
 	{
 		Debug.Log("Coletar item " + itemDisponivel.name + ".");
 
@@ -141,9 +143,20 @@ public class JogadorInventario : MonoBehaviour
 			lanterna.SetActive(true);
 		else if (itemDisponivel.name == "PáPrefab")
 			pa.SetActive(true);
-		
+
+		if (itemDisponivel.transform.FindChild("Camera"))
+		{
+			Destroy(itemDisponivel.transform.FindChild("Camera").gameObject);
+			itemDisponivel.GetComponent<ItensColetaveis>().camera = null;
+			itemDisponivel.GetComponent<FalaNpc>().frases = new List<string>();
+		}
+
+		jogadorScript.forcarCameraDisponivel = null;
+
 		itemDisponivel.GetComponent<ItensColetaveis>().itemColetado = true;
 		itemDisponivel = null;
+
+		jogadorScript.forcarCamera = null;
 
 		/*
 		itemDisponivel.transform.parent = maoEsquerda.transform;

@@ -8,7 +8,7 @@ public class FalaNpc : MonoBehaviour
 	public List<string> falas;
 
 	// Formatação das falas checando o limite de caracteres para cada frase
-	private List<string> frases = new List<string>();
+	internal List<string> frases = new List<string>();
 	private string fraseEmFormacao = "";
 	private string fraseAtual;
 	private int indexFraseAtual = 0;
@@ -32,14 +32,17 @@ public class FalaNpc : MonoBehaviour
 		
 		if (Input.GetButtonDown("A Button"))
 		{
-			if (controladorCena.jogadorScript.inventarioScript.itemDisponivel)
+			if (!GetComponent<ItensColetaveis>() || controladorCena.jogadorScript.inventarioScript.itemDisponivel)
 			{
 				if (!npcIniciado && gameObject == controladorCena.jogadorScript.falaNpcDisponivel)
 				{
-					if (gameObject.GetComponent<ItensColetaveis>() && gameObject.GetComponent<ItensColetaveis>().itemColetado)
+					if (GetComponent<ItensColetaveis>() && GetComponent<ItensColetaveis>().itemColetado)
 						return;
 
 					IniciarInteracaoNpc();
+
+					if (frases.Count == 0)
+						controladorCena.jogadorScript.inventarioScript.ColetarItem();
 				}
 				else if (npcIniciado)
 					ProsseguirExibicaoFraseAtual();
@@ -63,7 +66,7 @@ public class FalaNpc : MonoBehaviour
 		if (collider.CompareTag("Player"))
 		{
 			if (controladorCena.jogadorScript.falaNpcDisponivel == gameObject)
-				controladorCena.jogadorScript.falaNpcDisponivel = gameObject;
+				controladorCena.jogadorScript.falaNpcDisponivel = null;
 		}
 	}
 
@@ -188,8 +191,14 @@ public class FalaNpc : MonoBehaviour
 
 	void IniciarInteracaoNpc()
 	{
-		if (npcIniciado)
+		if (npcIniciado || frases.Count == 0)
 			return;
+
+		if (controladorCena.jogadorScript.forcarCameraDisponivel)
+		{
+			controladorCena.jogadorScript.forcarCamera = controladorCena.jogadorScript.forcarCameraDisponivel;
+			controladorCena.jogadorScript.forcarCameraDisponivel = null;
+		}
 
 		indexFraseAtual = 0;
 		proximaFraseDisponivel = true;
@@ -210,6 +219,12 @@ public class FalaNpc : MonoBehaviour
 			return;
 
 		npcIniciado = false;
+
+		controladorCena.jogadorScript.forcarCamera = null;
+		controladorCena.jogadorScript.forcarCameraDisponivel = null;
+
+		if (GetComponent<ItensColetaveis>() && gameObject == controladorCena.jogadorScript.inventarioScript.itemDisponivel)
+			controladorCena.jogadorScript.inventarioScript.ColetarItem();
 
 		controladorCena.AlteracaoExibicaoFalaNpc(false);
 		controladorCena.jogadorScript.movimentoScript.AlterarMovimento(true);

@@ -8,6 +8,8 @@ public class Jogador : MonoBehaviour
 	internal List<GameObject> cameras = new List<GameObject>();
 	internal GameObject[] camerasGO;
 	internal List<Camera> camerasDisponiveis = new List<Camera>();
+	internal Camera forcarCamera;
+	internal Camera forcarCameraDisponivel;
 
 	// Cena/Cenário
 	private ControladorCena controladorCena;
@@ -49,6 +51,12 @@ public class Jogador : MonoBehaviour
 		foreach (GameObject camera in camerasGO)
 			if (camera && camerasDisponiveis[0])
 				camera.GetComponent<Camera>().enabled = (camerasDisponiveis[0].gameObject == camera ? true : false);
+
+		if (forcarCamera)
+		{
+			camerasDisponiveis[0].GetComponent<Camera>().enabled = false;
+			forcarCamera.enabled = true;
+		}
 	}
 
 	public void AtualizarCamerasCenario()

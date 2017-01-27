@@ -1,2 +1,552 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=1633 outsize=490 ok=1
+Cmd: preprocess
+  insize=1871 outsize=443 ok=1
+Cmd: preprocess
+  insize=1988 outsize=445 ok=1
+Cmd: preprocess
+  insize=1922 outsize=442 ok=1
+Cmd: preprocess
+  insize=1932 outsize=431 ok=1
+Cmd: preprocess
+  insize=1619 outsize=489 ok=1
+Cmd: preprocess
+  insize=2551 outsize=635 ok=1
+Cmd: preprocess
+  insize=2858 outsize=641 ok=1
+Cmd: preprocess
+  insize=2502 outsize=636 ok=1
+Cmd: preprocess
+  insize=1783 outsize=645 ok=1
+Cmd: preprocess
+  insize=1833 outsize=640 ok=1
+Cmd: preprocess
+  insize=3540 outsize=634 ok=1
+Cmd: preprocess
+  insize=2742 outsize=642 ok=1
+Cmd: preprocess
+  insize=2365 outsize=687 ok=1
+Cmd: preprocess
+  insize=2035 outsize=635 ok=1
+Cmd: preprocess
+  insize=3052 outsize=638 ok=1
+Cmd: preprocess
+  insize=1692 outsize=476 ok=1
+Cmd: preprocess
+  insize=2799 outsize=646 ok=1
+Cmd: preprocess
+  insize=2957 outsize=681 ok=1
+Cmd: preprocess
+  insize=2921 outsize=750 ok=1
+Cmd: preprocess
+  insize=2132 outsize=790 ok=1
+Cmd: preprocess
+  insize=2069 outsize=697 ok=1
+Cmd: preprocess
+  insize=1848 outsize=493 ok=1
+Cmd: preprocess
+  insize=1976 outsize=710 ok=1
+Cmd: preprocess
+  insize=3546 outsize=635 ok=1
+Cmd: preprocess
+  insize=1719 outsize=453 ok=1
+Cmd: preprocess
+  insize=2816 outsize=645 ok=1
+Cmd: preprocess
+  insize=1557 outsize=423 ok=1
+Cmd: preprocess
+  insize=1727 outsize=641 ok=1
+Cmd: preprocess
+  insize=2277 outsize=493 ok=1
+Cmd: preprocess
+  insize=2490 outsize=672 ok=1
+Cmd: preprocess
+  insize=2613 outsize=439 ok=1
+Cmd: preprocess
+  insize=1786 outsize=441 ok=1
+Cmd: preprocess
+  insize=2144 outsize=642 ok=1
+Cmd: preprocess
+  insize=2124 outsize=642 ok=1
+Cmd: preprocess
+  insize=2335 outsize=686 ok=1
+Cmd: preprocess
+  insize=2137 outsize=643 ok=1
+Cmd: preprocess
+  insize=1643 outsize=492 ok=1
+Cmd: preprocess
+  insize=3372 outsize=742 ok=1
+Cmd: preprocess
+  insize=4971 outsize=1092 ok=1
+Cmd: preprocess
+  insize=1676 outsize=494 ok=1
+Cmd: preprocess
+  insize=1772 outsize=453 ok=1
+Cmd: preprocess
+  insize=3894 outsize=649 ok=1
+Cmd: preprocess
+  insize=2225 outsize=486 ok=1
+Cmd: preprocess
+  insize=1528 outsize=442 ok=1
+Cmd: preprocess
+  insize=1429 outsize=488 ok=1
+Cmd: preprocess
+  insize=1645 outsize=492 ok=1
+Cmd: preprocess
+  insize=2417 outsize=652 ok=1
+Cmd: preprocess
+  insize=1713 outsize=451 ok=1
+Cmd: preprocess
+  insize=2474 outsize=639 ok=1
+Cmd: preprocess
+  insize=2080 outsize=1036 ok=1
+Cmd: preprocess
+  insize=2837 outsize=700 ok=1
+Cmd: preprocess
+  insize=2155 outsize=740 ok=1
+Cmd: preprocess
+  insize=3371 outsize=742 ok=1
+Cmd: preprocess
+  insize=2085 outsize=572 ok=1
+Cmd: preprocess
+  insize=1872 outsize=442 ok=1
+Cmd: preprocess
+  insize=2246 outsize=818 ok=1
+Cmd: preprocess
+  insize=1625 outsize=491 ok=1
+Cmd: preprocess
+  insize=2516 outsize=527 ok=1
+Cmd: preprocess
+  insize=2278 outsize=494 ok=1
+Cmd: preprocess
+  insize=2505 outsize=640 ok=1
+Cmd: preprocess
+  insize=1761 outsize=439 ok=1
+Cmd: preprocess
+  insize=1776 outsize=442 ok=1
+Cmd: preprocess
+  insize=2712 outsize=817 ok=1
+Cmd: preprocess
+  insize=1946 outsize=637 ok=1
+Cmd: preprocess
+  insize=2045 outsize=641 ok=1
+Cmd: preprocess
+  insize=3432 outsize=878 ok=1
+Cmd: preprocess
+  insize=1596 outsize=449 ok=1
+Cmd: preprocess
+  insize=2305 outsize=641 ok=1
+Cmd: preprocess
+  insize=2659 outsize=595 ok=1
+Cmd: preprocess
+  insize=2340 outsize=723 ok=1
+Cmd: preprocess
+  insize=2546 outsize=737 ok=1
+Cmd: preprocess
+  insize=2172 outsize=437 ok=1
+Cmd: preprocess
+  insize=2621 outsize=746 ok=1
+Cmd: preprocess
+  insize=1680 outsize=440 ok=1
+Cmd: preprocess
+  insize=3714 outsize=751 ok=1
+Cmd: preprocess
+  insize=1894 outsize=445 ok=1
+Cmd: preprocess
+  insize=2101 outsize=568 ok=1
+Cmd: preprocess
+  insize=2990 outsize=439 ok=1
+Cmd: preprocess
+  insize=1287 outsize=445 ok=1
+Cmd: preprocess
+  insize=1931 outsize=439 ok=1
+Cmd: preprocess
+  insize=2062 outsize=436 ok=1
+Cmd: preprocess
+  insize=1634 outsize=442 ok=1
+Cmd: preprocess
+  insize=2561 outsize=740 ok=1
+Cmd: preprocess
+  insize=1858 outsize=440 ok=1
+Cmd: preprocess
+  insize=1525 outsize=448 ok=1
+Cmd: preprocess
+  insize=1571 outsize=465 ok=1
+Cmd: preprocess
+  insize=1897 outsize=658 ok=1
+Cmd: preprocess
+  insize=1720 outsize=577 ok=1
+Cmd: preprocess
+  insize=2251 outsize=641 ok=1
+Cmd: preprocess
+  insize=3726 outsize=740 ok=1
+Cmd: preprocess
+  insize=2480 outsize=814 ok=1
+Cmd: preprocess
+  insize=1647 outsize=494 ok=1
+Cmd: preprocess
+  insize=3320 outsize=741 ok=1
+Cmd: preprocess
+  insize=2440 outsize=692 ok=1
+Cmd: preprocess
+  insize=2008 outsize=441 ok=1
+Cmd: preprocess
+  insize=1874 outsize=578 ok=1
+Cmd: preprocess
+  insize=2446 outsize=827 ok=1
+Cmd: preprocess
+  insize=3440 outsize=828 ok=1
+Cmd: preprocess
+  insize=2056 outsize=445 ok=1
+Cmd: preprocess
+  insize=2947 outsize=525 ok=1
+Cmd: preprocess
+  insize=1731 outsize=455 ok=1
+Cmd: preprocess
+  insize=2382 outsize=638 ok=1
+Cmd: preprocess
+  insize=2557 outsize=441 ok=1
+Cmd: preprocess
+  insize=1633 outsize=489 ok=1
+Cmd: preprocess
+  insize=2770 outsize=746 ok=1
+Cmd: preprocess
+  insize=2954 outsize=450 ok=1
+Cmd: preprocess
+  insize=2140 outsize=639 ok=1
+Cmd: preprocess
+  insize=1482 outsize=441 ok=1
+Cmd: preprocess
+  insize=2402 outsize=683 ok=1
+Cmd: preprocess
+  insize=2211 outsize=625 ok=1
+Cmd: preprocess
+  insize=1627 outsize=489 ok=1
+Cmd: preprocess
+  insize=2014 outsize=441 ok=1
+Cmd: preprocess
+  insize=1837 outsize=492 ok=1
+Cmd: preprocess
+  insize=2146 outsize=436 ok=1
+Cmd: preprocess
+  insize=3117 outsize=760 ok=1
+Cmd: preprocess
+  insize=2899 outsize=525 ok=1
+Cmd: preprocess
+  insize=1615 outsize=447 ok=1
+Cmd: preprocess
+  insize=2707 outsize=739 ok=1
+Cmd: preprocess
+  insize=3298 outsize=576 ok=1
+Cmd: preprocess
+  insize=3399 outsize=366 ok=1
+Cmd: preprocess
+  insize=2333 outsize=615 ok=1
+Cmd: preprocess
+  insize=2751 outsize=706 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (86): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=0 insize=2352 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: preprocess
+  insize=2706 outsize=691 ok=1
+Cmd: preprocess
+  insize=3279 outsize=441 ok=1
+Cmd: preprocess
+  insize=1942 outsize=686 ok=1
+Cmd: preprocess
+  insize=1546 outsize=445 ok=1
+Cmd: preprocess
+  insize=3521 outsize=578 ok=1
+Cmd: preprocess
+  insize=1756 outsize=449 ok=1
+Cmd: preprocess
+  insize=1970 outsize=445 ok=1
+Cmd: preprocess
+  insize=2218 outsize=635 ok=1
+Cmd: preprocess
+  insize=2440 outsize=645 ok=1
+Cmd: preprocess
+  insize=1638 outsize=494 ok=1
+Cmd: preprocess
+  insize=1592 outsize=443 ok=1
+Cmd: preprocess
+  insize=1596 outsize=408 ok=1
+Cmd: preprocess
+  insize=3701 outsize=641 ok=1
+Cmd: preprocess
+  insize=1558 outsize=514 ok=1
+Cmd: preprocess
+  insize=3290 outsize=450 ok=1
+Cmd: preprocess
+  insize=2912 outsize=638 ok=1
+Cmd: preprocess
+  insize=1766 outsize=443 ok=1
+Cmd: preprocess
+  insize=3369 outsize=742 ok=1
+Cmd: preprocess
+  insize=1713 outsize=442 ok=1
+Cmd: preprocess
+  insize=1480 outsize=452 ok=1
+Cmd: preprocess
+  insize=2064 outsize=435 ok=1
+Cmd: preprocess
+  insize=1686 outsize=445 ok=1
+Cmd: preprocess
+  insize=3031 outsize=572 ok=1
+Cmd: preprocess
+  insize=3933 outsize=747 ok=1
+Cmd: preprocess
+  insize=1895 outsize=445 ok=1
+Cmd: preprocess
+  insize=1995 outsize=426 ok=1
+Cmd: preprocess
+  insize=2662 outsize=638 ok=1
+Cmd: preprocess
+  insize=1598 outsize=419 ok=1
+Cmd: preprocess
+  insize=2352 outsize=744 ok=1
+Cmd: preprocess
+  insize=2605 outsize=527 ok=1
+Cmd: preprocess
+  insize=3342 outsize=1004 ok=1
+Cmd: preprocess
+  insize=1824 outsize=489 ok=1
+Cmd: preprocess
+  insize=1772 outsize=576 ok=1
+Cmd: preprocess
+  insize=1795 outsize=445 ok=1
+Cmd: preprocess
+  insize=2217 outsize=686 ok=1
+Cmd: preprocess
+  insize=1318 outsize=451 ok=1
+Cmd: preprocess
+  insize=3136 outsize=450 ok=1
+Cmd: preprocess
+  insize=2580 outsize=738 ok=1
+Cmd: preprocess
+  insize=3164 outsize=453 ok=1
+Cmd: preprocess
+  insize=2159 outsize=440 ok=1
+Cmd: preprocess
+  insize=1624 outsize=489 ok=1
+Cmd: preprocess
+  insize=3334 outsize=742 ok=1
+Cmd: preprocess
+  insize=1924 outsize=442 ok=1
+Cmd: preprocess
+  insize=1403 outsize=449 ok=1
+Cmd: preprocess
+  insize=1505 outsize=444 ok=1
+Cmd: preprocess
+  insize=2948 outsize=855 ok=1
+Cmd: preprocess
+  insize=3955 outsize=695 ok=1
+Cmd: preprocess
+  insize=2042 outsize=441 ok=1
+Cmd: preprocess
+  insize=3544 outsize=438 ok=1
+Cmd: preprocess
+  insize=2178 outsize=567 ok=1
+Cmd: preprocess
+  insize=1925 outsize=442 ok=1
+Cmd: preprocess
+  insize=2198 outsize=631 ok=1
+Cmd: preprocess
+  insize=3154 outsize=441 ok=1
+Cmd: preprocess
+  insize=6574 outsize=697 ok=1
+Cmd: preprocess
+  insize=4611 outsize=1059 ok=1
+Cmd: preprocess
+  insize=1703 outsize=451 ok=1
+Cmd: preprocess
+  insize=1490 outsize=437 ok=1
+Cmd: preprocess
+  insize=2130 outsize=528 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (71): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=0 insize=1909 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: preprocess
+  insize=2235 outsize=488 ok=1
+Cmd: preprocess
+  insize=2290 outsize=524 ok=1
+Cmd: preprocess
+  insize=1626 outsize=491 ok=1
+Cmd: preprocess
+  insize=1679 outsize=495 ok=1
+Cmd: preprocess
+  insize=2249 outsize=493 ok=1
+Cmd: preprocess
+  insize=2086 outsize=738 ok=1
+Cmd: preprocess
+  insize=1636 outsize=493 ok=1
+Cmd: preprocess
+  insize=1832 outsize=491 ok=1
+Cmd: preprocess
+  insize=3272 outsize=569 ok=1
+Cmd: preprocess
+  insize=2907 outsize=669 ok=1
+Cmd: preprocess
+  insize=1950 outsize=492 ok=1
+Cmd: preprocess
+  insize=1983 outsize=451 ok=1
+Cmd: preprocess
+  insize=1971 outsize=645 ok=1
+Cmd: preprocess
+  insize=2493 outsize=809 ok=1
+Cmd: preprocess
+  insize=1818 outsize=570 ok=1
+Cmd: preprocess
+  insize=3215 outsize=689 ok=1
+Cmd: preprocess
+  insize=1641 outsize=492 ok=1
+Cmd: preprocess
+  insize=1643 outsize=493 ok=1
+Cmd: preprocess
+  insize=1405 outsize=452 ok=1
+Cmd: preprocess
+  insize=1397 outsize=448 ok=1
+Cmd: preprocess
+  insize=2006 outsize=493 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (86): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=0 insize=2352 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: compileSnippet
+  error: 2 plat 4 at (86): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Fragment program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=1 insize=2352 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: compileSnippet
+  error: 2 plat 4 at (71): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=0 insize=1909 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: compileSnippet
+  error: 2 plat 4 at (71): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Fragment program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=1 insize=1909 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: compileSnippet
+  error: 2 plat 4 at (86): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=0 insize=2352 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: compileSnippet
+  error: 2 plat 4 at (86): 'tex2Dproj': no matching 2 parameter intrinsic function; Possible intrinsic functions are: tex2Dproj(sampler2D, float4|half4|min10float4|min16float4)\nCompiling Fragment program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA
+  api=4 type=1 insize=2352 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=0
+Cmd: preprocess
+  insize=993 outsize=1148 ok=1
+Cmd: preprocess
+  insize=993 outsize=1148 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4260 outsize=1094 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4260 outsize=2618 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=597 outsize=686 kw=SHADOWS_CUBE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=597 outsize=386 kw=SHADOWS_CUBE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: preprocess
+  insize=1682 outsize=479 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=889 outsize=806 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=889 outsize=442 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=958 outsize=1698 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=958 outsize=1334 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: preprocess
+  insize=1682 outsize=479 ok=1
+Cmd: preprocess
+  insize=454 outsize=1304 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=6956 outsize=1762 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=6956 outsize=610 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3670 outsize=1094 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3670 outsize=922 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3104 outsize=986 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3104 outsize=338 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=6114 outsize=1966 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=6114 outsize=618 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5805 outsize=1830 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5805 outsize=758 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3131 outsize=1210 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3131 outsize=610 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3670 outsize=1094 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3670 outsize=538 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: preprocess
+  insize=586 outsize=1307 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=7167 outsize=1774 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7167 outsize=610 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3881 outsize=1106 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3881 outsize=922 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3315 outsize=998 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3315 outsize=338 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=6326 outsize=1978 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=6326 outsize=618 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=6016 outsize=1842 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=6016 outsize=758 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3342 outsize=1210 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3342 outsize=610 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3881 outsize=1106 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3881 outsize=538 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: preprocess
+  insize=527 outsize=524 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4238 outsize=1274 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4238 outsize=430 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4238 outsize=1822 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4238 outsize=430 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4258 outsize=1206 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4258 outsize=422 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=635 outsize=686 kw=SHADOWS_CUBE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=635 outsize=386 kw=SHADOWS_CUBE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4258 outsize=1754 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4258 outsize=422 kw=POINT pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1581 outsize=622 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1581 outsize=374 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1347 outsize=622 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1347 outsize=394 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1

@@ -20,7 +20,8 @@ public class FalaNpc : MonoBehaviour
 
 	private ControladorCena controladorCena;
 
-	void Update()
+  
+    void Update()
 	{
 		if (controladorCena == null)
 		{

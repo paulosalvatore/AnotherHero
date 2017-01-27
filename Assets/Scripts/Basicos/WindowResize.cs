@@ -9,14 +9,14 @@ public class WindowResize : MonoBehaviour
 
 	void Start ()
 	{
-		controladorCena = ControladorCena.Pegar();
+       controladorCena = ControladorCena.Pegar();
 		resolucao[0] = Screen.width;
 		resolucao[1] = Screen.height;
 	}
 	
 	void Update ()
 	{
-		ChecarResolucao();
+        ChecarResolucao();
 	}
 
 	void ChecarResolucao()
@@ -39,11 +39,11 @@ public class WindowResize : MonoBehaviour
 		int novoTamanho = controladorCena.textoNpc.fontSize;
 
 		if (Screen.width <= 1024 && Screen.height <= 768)
-			novoTamanho = 50;
+			novoTamanho = 25;
 		else if (Screen.width <= 1366 && Screen.height <= 768)
-			novoTamanho = 60;
+			novoTamanho = 25;
 		else if (Screen.width <= 1920 && Screen.height <= 1080)
-			novoTamanho = 64;
+			novoTamanho = 25;
 
 		controladorCena.textoNpc.fontSize = novoTamanho;
 	}

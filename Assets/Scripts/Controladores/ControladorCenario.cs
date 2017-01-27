@@ -57,12 +57,14 @@ public class ControladorCenario : MonoBehaviour
 			destino.transform.position.z
 		);
 
-		// Aplicar apenas a rotação do 'destino' no eixo Y.
-		jogador.transform.rotation = new Quaternion(
-			jogador.transform.rotation.x,
-			destino.transform.rotation.y,
-			jogador.transform.rotation.z,
-			jogador.transform.rotation.w
+        // Aplicar apenas a rotação do 'destino' no eixo Y.
+        jogador.transform.rotation = new Quaternion(
+
+
+    jogador.transform.rotation.x,
+	destino.transform.rotation.y,
+	jogador.transform.rotation.z,
+	jogador.transform.rotation.w
 		);
 
 		controladorCena.jogadorScript.FinalizaMudancaCena();

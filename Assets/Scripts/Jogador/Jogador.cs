@@ -144,8 +144,9 @@ public class Jogador : MonoBehaviour
 		yield return new WaitForSeconds(controladorCena.delayCarregamentoCena);
 		
 		transform.position = destino.transform.position;
+      //  transform.rotation = destino.transform.rotation;
 
-		FinalizarMudancaCenario();
+        FinalizarMudancaCenario();
 
 		controladorCena.Fade("fadeIn");
 	}

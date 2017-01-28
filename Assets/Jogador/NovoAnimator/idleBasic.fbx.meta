@@ -1,0 +1,669 @@
+fileFormatVersion: 2
+guid: cf35cdf5eb160304c8cf603770910a42
+timeCreated: 1485478760
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bacia
+    100002: cabeca
+    100004: cabelo
+    100006: centro
+    100008: D_braco
+    100010: D_calcanhar
+    100012: D_cotovelo
+    100014: D_coxa
+    100016: D_joelho
+    100018: D_mao
+    100020: D_mao1
+    100022: D_ombro
+    100024: D_ombro 1
+    100026: D_pe
+    100028: D_pe1
+    100030: D_perna01
+    100032: D_perna02
+    100034: D_pulso
+    100036: E_braco
+    100038: E_calcanhar
+    100040: E_cotovelo
+    100042: E_coxa
+    100044: E_joelho
+    100046: E_mao
+    100048: E_mao1
+    100050: E_ombro
+    100052: E_ombro 1
+    100054: E_pe
+    100056: E_pe1
+    100058: E_perna01
+    100060: E_perna02
+    100062: E_pulso
+    100064: head
+    100066: //RootNode
+    100068: nurbsCircle10
+    100070: nurbsCircle2
+    100072: nurbsCircle3
+    100074: nurbsCircle5
+    100076: nurbsCircle6
+    100078: nurbsCircle9
+    100080: pelvis
+    100082: pescoco
+    100084: torso
+    100086: torsoCentro
+    400000: bacia
+    400002: cabeca
+    400004: cabelo
+    400006: centro
+    400008: D_braco
+    400010: D_calcanhar
+    400012: D_cotovelo
+    400014: D_coxa
+    400016: D_joelho
+    400018: D_mao
+    400020: D_mao1
+    400022: D_ombro
+    400024: D_ombro 1
+    400026: D_pe
+    400028: D_pe1
+    400030: D_perna01
+    400032: D_perna02
+    400034: D_pulso
+    400036: E_braco
+    400038: E_calcanhar
+    400040: E_cotovelo
+    400042: E_coxa
+    400044: E_joelho
+    400046: E_mao
+    400048: E_mao1
+    400050: E_ombro
+    400052: E_ombro 1
+    400054: E_pe
+    400056: E_pe1
+    400058: E_perna01
+    400060: E_perna02
+    400062: E_pulso
+    400064: head
+    400066: //RootNode
+    400068: nurbsCircle10
+    400070: nurbsCircle2
+    400072: nurbsCircle3
+    400074: nurbsCircle5
+    400076: nurbsCircle6
+    400078: nurbsCircle9
+    400080: pelvis
+    400082: pescoco
+    400084: torso
+    400086: torsoCentro
+    2300000: cabelo
+    2300002: D_braco
+    2300004: D_mao
+    2300006: D_ombro 1
+    2300008: D_pe
+    2300010: D_perna01
+    2300012: D_perna02
+    2300014: E_braco
+    2300016: E_mao1
+    2300018: E_ombro 1
+    2300020: E_pe
+    2300022: E_perna01
+    2300024: E_perna02
+    2300026: head
+    2300028: pelvis
+    2300030: torso
+    3300000: cabelo
+    3300002: D_braco
+    3300004: D_mao
+    3300006: D_ombro 1
+    3300008: D_pe
+    3300010: D_perna01
+    3300012: D_perna02
+    3300014: E_braco
+    3300016: E_mao1
+    3300018: E_ombro 1
+    3300020: E_pe
+    3300022: E_perna01
+    3300024: E_perna02
+    3300026: head
+    3300028: pelvis
+    3300030: torso
+    4300000: E_pe
+    4300002: E_perna02
+    4300004: E_perna01
+    4300006: D_pe
+    4300008: D_perna02
+    4300010: D_perna01
+    4300012: D_mao
+    4300014: D_braco
+    4300016: D_ombro
+    4300018: E_mao1
+    4300020: E_braco
+    4300022: E_ombro
+    4300024: torso
+    4300026: head
+    4300028: cabelo
+    4300030: pelvis
+    7400000: IdleBasic
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IdleBasic
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 148
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: centro
+        weight: 1
+      - path: centro/bacia
+        weight: 1
+      - path: centro/bacia/torsoCentro
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_braco
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_pulso
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_pulso/D_mao
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_pulso/D_mao1
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_ombro 1
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_braco
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_pulso
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_pulso/E_mao
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_pulso/E_mao1
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_ombro 1
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco/cabeca
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco/cabelo
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco/head
+        weight: 1
+      - path: centro/bacia/torsoCentro/torso
+        weight: 1
+      - path: centro/D_coxa
+        weight: 1
+      - path: centro/D_coxa/D_joelho
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_calcanhar
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_calcanhar/D_pe
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_calcanhar/D_pe1
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_perna02
+        weight: 1
+      - path: centro/D_coxa/D_perna01
+        weight: 1
+      - path: centro/E_coxa
+        weight: 1
+      - path: centro/E_coxa/E_joelho
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_calcanhar
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_calcanhar/E_pe
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_calcanhar/E_pe1
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_perna02
+        weight: 1
+      - path: centro/E_coxa/E_perna01
+        weight: 1
+      - path: centro/pelvis
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle9
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle5
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle6
+        weight: 1
+      - path: nurbsCircle9/nurbsCircle10
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: centro
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: E_coxa
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: D_coxa
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: E_joelho
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: D_joelho
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: E_calcanhar
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: D_calcanhar
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: torsoCentro
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pescoco
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: E_ombro
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: D_ombro
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: E_cotovelo
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: D_cotovelo
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: E_pulso
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: D_pulso
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: idleBasic(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: centro
+      parentName: idleBasic(Clone)
+      position: {x: 0.000000005122274, y: 0.2762982, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bacia
+      parentName: centro
+      position: {x: 0.0000656476, y: 0.023673756, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: torsoCentro
+      parentName: bacia
+      position: {x: 0.0014144139, y: 0.100217015, z: 5.8261914e-35}
+      rotation: {x: -0.7028345, y: 0.7113534, z: -8.659404e-17, w: -5.2163183e-19}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_ombro
+      parentName: torsoCentro
+      position: {x: -0.0035466286, y: -0.05795244, z: -7.097128e-18}
+      rotation: {x: -0.2333073, y: 0.23175251, z: -0.66641283, w: 0.6691431}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_cotovelo
+      parentName: D_ombro
+      position: {x: 0.0851848, y: -0.000000039849617, z: -5.9213966e-16}
+      rotation: {x: -0.00023590025, y: 0.0029485817, z: 0.033057224, w: 0.9994491}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_braco
+      parentName: D_cotovelo
+      position: {x: 0.0360991, y: 0.0039683864, z: -0.000000001309607}
+      rotation: {x: 0.711596, y: -0.70258886, z: 0.000000010535295, w: 0.000000010401942}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_pulso
+      parentName: D_cotovelo
+      position: {x: 0.074026994, y: -0.00000005744757, z: 1.75405e-10}
+      rotation: {x: 0.0053197225, y: 0.9370919, z: 0.3479321, w: 0.027815776}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_mao
+      parentName: D_pulso
+      position: {x: -0.022971667, y: 0.0031743716, z: 0.0000000014317453}
+      rotation: {x: 0.000000010572297, y: 0.000000010320611, z: -0.715573, w: 0.69853795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_mao1
+      parentName: D_pulso
+      position: {x: -0.020399123, y: 0.0004915451, z: 5.947972e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_ombro 1
+      parentName: D_ombro
+      position: {x: 0.035546634, y: 0.00064876553, z: 0.0000000011920929}
+      rotation: {x: 0.76536745, y: -0.64359355, z: -3.940874e-17, w: 4.686524e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_ombro
+      parentName: torsoCentro
+      position: {x: -0.0021382915, y: 0.05896395, z: 7.221001e-18}
+      rotation: {x: -0.66005796, y: 0.6789633, z: 0.23078015, w: -0.22376974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_cotovelo
+      parentName: E_ombro
+      position: {x: -0.08518509, y: 4.7225508e-17, z: -1.6659502e-18}
+      rotation: {x: -0.00023226437, y: 0.0029024777, z: 0.032950815, w: 0.9994527}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_braco
+      parentName: E_cotovelo
+      position: {x: -0.03613873, y: -0.0008577299, z: -1.2225644e-18}
+      rotation: {x: 0, y: -0, z: -0.70258886, w: 0.711596}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_pulso
+      parentName: E_cotovelo
+      position: {x: -0.074026994, y: -3.837544e-17, z: -6.6752644e-18}
+      rotation: {x: 0.005335913, y: 0.939936, z: 0.34022367, w: 0.02719929}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_mao
+      parentName: E_pulso
+      position: {x: 0.02075985, y: -0.0005002374, z: 2.9480407e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_mao1
+      parentName: E_pulso
+      position: {x: 0.023046607, y: -0.000064311025, z: -2.8543772e-18}
+      rotation: {x: -0.69853795, y: 0.715573, z: -4.381621e-17, w: 4.2773116e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_ombro 1
+      parentName: E_ombro
+      position: {x: -0.036080685, y: 0.0024159527, z: -2.8885147e-18}
+      rotation: {x: 0, y: -0, z: -0.64359355, w: 0.76536745}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pescoco
+      parentName: torsoCentro
+      position: {x: -0.023591518, y: 0.00028423517, z: 3.4808768e-20}
+      rotation: {x: -6.0494656e-17, y: 6.1227896e-17, z: -1.545e-41, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: cabeca
+      parentName: pescoco
+      position: {x: -0.0382237, y: 0.0004605265, z: 5.639823e-20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: cabelo
+      parentName: pescoco
+      position: {x: -0.05062574, y: 0.0021950512, z: 0.005968164}
+      rotation: {x: -0.7028345, y: 0.7113534, z: 4.3557832e-17, w: -4.3036202e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: pescoco
+      position: {x: -0.027066631, y: 0.0016333717, z: 0.00039864657}
+      rotation: {x: -0.7028345, y: 0.7113534, z: 4.3557832e-17, w: -4.3036202e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: torso
+      parentName: torsoCentro
+      position: {x: 0.030392045, y: 0.0024660483, z: 0.0022595811}
+      rotation: {x: -0.7028345, y: 0.7113534, z: 4.3557832e-17, w: -4.3036202e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_coxa
+      parentName: centro
+      position: {x: 0.024890926, y: -0.003928029, z: 0}
+      rotation: {x: 0.5846772, y: -0.5242726, z: 0.43792093, w: -0.43762547}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_joelho
+      parentName: D_coxa
+      position: {x: 0.100256346, y: -0.00000003458056, z: 4.2348972e-24}
+      rotation: {x: -1.7364602e-19, y: 4.9892052e-18, z: 0.04672192, w: 0.9989079}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_calcanhar
+      parentName: D_joelho
+      position: {x: 0.14172095, y: 0.000000059601923, z: -2.0738054e-19}
+      rotation: {x: -0.457608, y: -0.416996, z: -0.55101734, w: 0.55954367}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_pe
+      parentName: D_calcanhar
+      position: {x: -0.0015111637, y: 0.006115112, z: -0.014687914}
+      rotation: {x: 1, y: -0, z: 0, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_pe1
+      parentName: D_calcanhar
+      position: {x: -0.0018596931, y: 0.0025124287, z: -0.02766531}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_perna02
+      parentName: D_joelho
+      position: {x: 0.06905283, y: 0.0017482829, z: -0.0014121878}
+      rotation: {x: 0.70741695, y: -0.70679647, z: -4.32788e-17, w: 4.3316795e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: D_perna01
+      parentName: D_coxa
+      position: {x: 0.04429551, y: 0.0007933521, z: -0.0000680089}
+      rotation: {x: 0.71162695, y: -0.7025575, z: -4.3019242e-17, w: 4.3574584e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_coxa
+      parentName: centro
+      position: {x: -0.024890937, y: -0.0039280513, z: 0}
+      rotation: {x: 0.45104605, y: 0.4529319, z: 0.49921235, w: 0.5849762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_joelho
+      parentName: E_coxa
+      position: {x: -0.10025629, y: -5.8286707e-18, z: 0}
+      rotation: {x: 0, y: 0, z: 0.06910183, w: 0.9976096}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_calcanhar
+      parentName: E_joelho
+      position: {x: -0.14172138, y: 1.9947535e-16, z: 0}
+      rotation: {x: 0.0508736, y: 0.08537984, z: -0.6349708, w: 0.7661164}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_pe
+      parentName: E_calcanhar
+      position: {x: -0.015685653, y: -0.0023499297, z: -0.00036715268}
+      rotation: {x: -0.08354747, y: -0.70215374, z: -0.08354747, w: 0.70215374}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_pe1
+      parentName: E_calcanhar
+      position: {x: -0.028990738, y: -7.241892e-18, z: 1.2362105e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_perna02
+      parentName: E_joelho
+      position: {x: -0.068894155, y: -0.00032747508, z: 0.0014203835}
+      rotation: {x: 0, y: -0, z: -0.70679647, w: 0.70741695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: E_perna01
+      parentName: E_coxa
+      position: {x: -0.0441499, y: 0.000030677318, z: 0.00007583797}
+      rotation: {x: 0, y: -0, z: -0.7025575, w: 0.71162695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis
+      parentName: centro
+      position: {x: 0.0009629184, y: 0.006973855, z: -0.0037262999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle2
+      parentName: idleBasic(Clone)
+      position: {x: -0.04620923, y: -0.21794668, z: 0.011889734}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle3
+      parentName: idleBasic(Clone)
+      position: {x: 0.035173696, y: -0.21861044, z: 3.1350954e-28}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle9
+      parentName: idleBasic(Clone)
+      position: {x: -0.0027828258, y: 0.026685027, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle5
+      parentName: nurbsCircle9
+      position: {x: -0.073012404, y: -0.031203615, z: -5.227451e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle6
+      parentName: nurbsCircle9
+      position: {x: 0.07502963, y: -0.031203615, z: -1.754027e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle10
+      parentName: nurbsCircle9
+      position: {x: 0.0014800613, y: 0.147484, z: -1.3489564e-27}
+      rotation: {x: -6.0494656e-17, y: 6.1227896e-17, z: 8.6736174e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

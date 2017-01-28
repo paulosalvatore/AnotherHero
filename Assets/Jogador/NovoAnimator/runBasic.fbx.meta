@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 7fb56726445961044b74bc8333c65102
+timeCreated: 1485560509
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bacia
+    100002: cabeca
+    100004: cabelo
+    100006: centro
+    100008: D_braco
+    100010: D_calcanhar
+    100012: D_cotovelo
+    100014: D_coxa
+    100016: D_joelho
+    100018: D_mao
+    100020: D_mao1
+    100022: D_ombro
+    100024: D_ombro 1
+    100026: D_pe
+    100028: D_pe1
+    100030: D_perna01
+    100032: D_perna02
+    100034: D_pulso
+    100036: E_braco
+    100038: E_calcanhar
+    100040: E_cotovelo
+    100042: E_coxa
+    100044: E_joelho
+    100046: E_mao
+    100048: E_mao1
+    100050: E_ombro
+    100052: E_ombro 1
+    100054: E_pe
+    100056: E_pe1
+    100058: E_perna01
+    100060: E_perna02
+    100062: E_pulso
+    100064: head
+    100066: pelvis
+    100068: pescoco
+    100070: //RootNode
+    100072: torso
+    100074: torsoCentro
+    400000: bacia
+    400002: cabeca
+    400004: cabelo
+    400006: centro
+    400008: D_braco
+    400010: D_calcanhar
+    400012: D_cotovelo
+    400014: D_coxa
+    400016: D_joelho
+    400018: D_mao
+    400020: D_mao1
+    400022: D_ombro
+    400024: D_ombro 1
+    400026: D_pe
+    400028: D_pe1
+    400030: D_perna01
+    400032: D_perna02
+    400034: D_pulso
+    400036: E_braco
+    400038: E_calcanhar
+    400040: E_cotovelo
+    400042: E_coxa
+    400044: E_joelho
+    400046: E_mao
+    400048: E_mao1
+    400050: E_ombro
+    400052: E_ombro 1
+    400054: E_pe
+    400056: E_pe1
+    400058: E_perna01
+    400060: E_perna02
+    400062: E_pulso
+    400064: head
+    400066: pelvis
+    400068: pescoco
+    400070: //RootNode
+    400072: torso
+    400074: torsoCentro
+    2300000: cabelo
+    2300002: D_braco
+    2300004: D_mao
+    2300006: D_ombro 1
+    2300008: D_pe
+    2300010: D_perna01
+    2300012: D_perna02
+    2300014: E_braco
+    2300016: E_mao1
+    2300018: E_ombro 1
+    2300020: E_pe
+    2300022: E_perna01
+    2300024: E_perna02
+    2300026: head
+    2300028: pelvis
+    2300030: torso
+    3300000: cabelo
+    3300002: D_braco
+    3300004: D_mao
+    3300006: D_ombro 1
+    3300008: D_pe
+    3300010: D_perna01
+    3300012: D_perna02
+    3300014: E_braco
+    3300016: E_mao1
+    3300018: E_ombro 1
+    3300020: E_pe
+    3300022: E_perna01
+    3300024: E_perna02
+    3300026: head
+    3300028: pelvis
+    3300030: torso
+    4300000: E_pe
+    4300002: E_perna02
+    4300004: E_perna01
+    4300006: D_pe
+    4300008: D_perna02
+    4300010: D_perna01
+    4300012: D_mao
+    4300014: D_braco
+    4300016: D_ombro
+    4300018: E_mao1
+    4300020: E_braco
+    4300022: E_ombro
+    4300024: torso
+    4300026: head
+    4300028: cabelo
+    4300030: pelvis
+    7400000: RunBasic
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RunBasic
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: centro
+        weight: 1
+      - path: centro/bacia
+        weight: 1
+      - path: centro/bacia/torsoCentro
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_braco
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_pulso
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_pulso/D_mao
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_cotovelo/D_pulso/D_mao1
+        weight: 1
+      - path: centro/bacia/torsoCentro/D_ombro/D_ombro 1
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_braco
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_pulso
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_pulso/E_mao
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_cotovelo/E_pulso/E_mao1
+        weight: 1
+      - path: centro/bacia/torsoCentro/E_ombro/E_ombro 1
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco/cabeca
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco/cabelo
+        weight: 1
+      - path: centro/bacia/torsoCentro/pescoco/head
+        weight: 1
+      - path: centro/bacia/torsoCentro/torso
+        weight: 1
+      - path: centro/D_coxa
+        weight: 1
+      - path: centro/D_coxa/D_joelho
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_calcanhar
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_calcanhar/D_pe
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_calcanhar/D_pe1
+        weight: 1
+      - path: centro/D_coxa/D_joelho/D_perna02
+        weight: 1
+      - path: centro/D_coxa/D_perna01
+        weight: 1
+      - path: centro/E_coxa
+        weight: 1
+      - path: centro/E_coxa/E_joelho
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_calcanhar
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_calcanhar/E_pe
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_calcanhar/E_pe1
+        weight: 1
+      - path: centro/E_coxa/E_joelho/E_perna02
+        weight: 1
+      - path: centro/E_coxa/E_perna01
+        weight: 1
+      - path: centro/pelvis
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

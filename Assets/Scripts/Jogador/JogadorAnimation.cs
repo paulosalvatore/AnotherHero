@@ -40,6 +40,7 @@ public class JogadorAnimation : MonoBehaviour
 
 		//animator.SetBool("arma", exibirArma);
 		animator.SetBool("lanterna", exibirLanterna);
+		animator.SetLayerWeight(1, exibirLanterna ? 1 : 0);
 
 		if (alavanca)
 		{

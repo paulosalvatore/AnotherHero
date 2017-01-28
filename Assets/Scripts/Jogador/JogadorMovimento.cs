@@ -15,7 +15,8 @@ public class JogadorMovimento : MonoBehaviour
 	private float vAnterior = 0f;
 	private Vector3 posicaoAnterior;
 	internal Vector2 modificadores = new Vector2(1f, 1f);
-	private int contadorModificadores = 0;
+	private int contadorModificadoresX = 0;
+	private int contadorModificadoresY = 0;
 	private int limiteContadorModificadores = 5;
 
 	private new Rigidbody rigidbody;
@@ -37,24 +38,41 @@ public class JogadorMovimento : MonoBehaviour
 		
 		if (Camera.main && Camera.main.GetComponent<CameraFixa>())
 		{
-			modificadores.x = Camera.main.GetComponent<CameraFixa>().modificadorHorizontal;
+			// modificadores.x = Camera.main.GetComponent<CameraFixa>().modificadorHorizontal;
+
+			if (modificadores.x != Camera.main.GetComponent<CameraFixa>().modificadorHorizontal)
+			{
+				if (Mathf.Abs(h) <= 0.05f)
+				{
+					if (contadorModificadoresX == limiteContadorModificadores)
+					{
+						modificadores.x = Camera.main.GetComponent<CameraFixa>().modificadorHorizontal;
+					}
+					else
+						contadorModificadoresX++;
+				}
+				else
+					contadorModificadoresX = 0;
+			}
+			else
+				contadorModificadoresX = 0;
 
 			if (modificadores.y != Camera.main.GetComponent<CameraFixa>().modificadorVertical)
 			{
 				if (Mathf.Abs(v) <= 0.05f)
 				{
-					if (contadorModificadores == limiteContadorModificadores)
+					if (contadorModificadoresY == limiteContadorModificadores)
 					{
 						modificadores.y = Camera.main.GetComponent<CameraFixa>().modificadorVertical;
 					}
 					else
-						contadorModificadores++;
+						contadorModificadoresY++;
 				}
 				else
-					contadorModificadores = 0;
+					contadorModificadoresY = 0;
 			}
 			else
-				contadorModificadores = 0;
+				contadorModificadoresY = 0;
 		}
 
 		hAnterior = h;

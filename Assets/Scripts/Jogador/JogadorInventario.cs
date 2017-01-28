@@ -82,6 +82,7 @@ public class JogadorInventario : MonoBehaviour
 
 			Alavanca alavanca = interacaoDisponivel.GetComponent<Alavanca>();
 			alavanca.interacaoDisponivel = false;
+			alavanca.portaoNpc.SetActive(false);
 
 			transform.position = alavanca.posicaoJogador;
 			transform.rotation = new Quaternion(
@@ -116,7 +117,7 @@ public class JogadorInventario : MonoBehaviour
 		prefab.SetActive(true);
 
 		prefab.transform.position = new Vector3(
-			transform.position.x,
+			transform.position.x + 1f,
 			1f,
 			transform.position.z
 		);

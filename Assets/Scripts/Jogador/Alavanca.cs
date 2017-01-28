@@ -7,6 +7,8 @@ public class Alavanca : MonoBehaviour
 	public Vector3 posicaoJogador;
 	public Vector4 rotacaoJogador;
 	public GameObject portao;
+	public GameObject portaoNpc;
+
 	internal bool interacaoDisponivel = true;
 
 	private ControladorCena controladorCena;

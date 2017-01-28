@@ -27,15 +27,15 @@ public class JogadorAnimation : MonoBehaviour
 
 		if (nomeAnimacao == "Walk")
 		{
-			animator.SetFloat("velocidade", 0.1f);
+			animator.SetInteger("velocidade", 1);
 		}
 		else if (nomeAnimacao == "Run")
 		{
-			animator.SetFloat("velocidade", 0.31f);
+			animator.SetInteger("velocidade", 2);
 		}
 		else if (nomeAnimacao == "Idle")
 		{
-			animator.SetFloat("velocidade", 0f);
+			animator.SetInteger("velocidade", 0);
 		}
 
 		//animator.SetBool("arma", exibirArma);

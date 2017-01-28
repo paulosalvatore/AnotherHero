@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntepolarLanternaTeste : MonoBehaviour
+public class InterpolarAnimatorLayer : MonoBehaviour
 {
 	[Header("Index da Camada de Animação")]
 	public int layerIndex;
